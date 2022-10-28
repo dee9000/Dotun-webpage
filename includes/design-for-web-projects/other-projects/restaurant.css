@@ -1,0 +1,551 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body, html{
+    height:100%;
+    margin:0;
+    font-size:16px;
+    font-family: 'Questrial', sans-serif;
+    font-weight:400;
+    line-height:1.8em;
+    color:#666;
+  }
+
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+ 
+  .navbar {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 18px;
+    padding-bottom: 10px;
+    background-color: rgb(68, 1, 1);
+    background-image: url(images/vichym.png);
+    color: rgb(194, 141, 6);
+
+  }
+  
+  .main-nav {
+    list-style-type: none;
+    display:none ;
+  }
+  
+  .nav-links,
+  .logo {
+    text-decoration: none;
+    color: rgb(194, 141, 6);
+  }
+
+  
+  .main-nav li {
+    text-align: center;
+    margin: 15px auto;
+    
+  }
+  
+  .logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  
+  .navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgb(194, 141, 6);
+    font-size: 24px;
+  }
+  
+  .active {
+    display: block;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 0;
+      height: 70px;
+      align-items: center;
+    }
+  
+    .main-nav {
+      display: flex;
+      margin-right: 30px;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  
+    .main-nav li {
+      margin: 0;
+    }
+  
+    .nav-links {
+      margin-left: 40px;
+    }
+  
+    .logo {
+      margin-top: 0;
+    }
+  
+    .navbar-toggle {
+      display: none;
+    }
+  
+
+    .main-nav :hover {
+      color: #ffdd;
+    }
+  }
+
+  a {
+    color: #fff;
+  }
+  a:visited {
+    color: #ffdd;
+  }
+
+  
+  
+  .pimg1, .pimg2, .pimg3, .pimg4{
+    position:relative;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background: transparent;
+
+    /*
+      fixed = parallax
+      scroll = normal
+    */
+    background-attachment:fixed;
+  }
+  
+  .pimg1{
+    background-image:url('images/main3.jpg');
+    min-height:100%;
+    background: transparent;
+    
+
+  }
+  
+  .pimg2{
+    background-image:url("images/sidegrill.jpg");
+    min-height:400px;
+    background: transparent;
+  }
+  
+  .pimg3{
+    background-image:url('images/main1light.jpg');
+    min-height:400px;
+    background: transparent;
+
+  }
+
+  .pimg4{
+    
+    background-image:url('images/burgerwoodlight.jpg');
+    min-height:400px;
+    background: transparent;
+
+  }
+
+
+
+  .about-border-one {
+    display: block;
+    width: 120px;
+    height: 5px;
+    background: brown;
+    margin: 20px auto;
+}
+
+
+  .about-border {
+    display: block;
+    width: 120px;
+    height: 3px;
+    background: #f1cd8f;
+    margin: 20px auto;
+}
+
+
+
+   span{
+    height: 120px;
+    font-weight: 900;
+   }
+
+
+
+   /*YELLOW SECTION*/
+  
+  .section{
+    text-align:center;
+    padding:50px 80px;
+    
+  }
+
+
+  .container{
+    background-color: #f1cd8f;
+    background-color:rgb(68, 1, 1);/*testing*/
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 1em;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+   
+}
+
+ h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.container h4{
+  text-align: left;
+  font-family: 'Questrial', sans-serif;
+  font-size: 25px;
+  padding:5px;
+  padding-top: 1em;
+  color: rgb(255, 255, 255);/*testing*/
+
+
+}
+
+.container p{
+  text-align: left;
+  font-family: 'Questrial', sans-serif;
+  font-size: 17px;
+  color: #fff;/*testing*/
+
+
+}
+
+
+
+.image{
+    height: 350px;
+    width: 100%;
+    background: url("images/chef2.jpg");
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+
+/*SECTION DARK MAROON COLOR*/
+
+.container-maroon{
+  background-color:rgb(68, 1, 1);
+  background-color: #f1cd8f;
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 1em;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+ 
+}
+
+
+
+.container-maroon h4{
+text-align: left;
+font-family: 'Questrial', sans-serif;
+font-size: 25px;
+padding:5px;
+padding-top: 1em;
+color: #000;
+
+
+
+}
+
+.container-maroon p{
+text-align: left;
+font-family: 'Questrial', sans-serif;
+font-size: 17px;
+padding-top: 1em;
+color: #000;
+
+}
+
+
+/*SECTION BLUE*/
+
+
+.image-2{
+  height: 370px;
+  width: 100%;
+  background: url("images/steak.jpg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.container-blue{
+  background-color:#12233b;
+  background-color: #f1cd8f;/*testing*/
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 1em;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+ 
+}
+
+
+
+.container-blue h4{
+text-align: left;
+font-family: 'Questrial', sans-serif;
+font-size: 25px;
+padding:5px;
+padding-top: 1em;
+color: #000;/*testing*/
+
+
+
+}
+
+.container-blue p{
+text-align: left;
+font-family: 'Questrial', sans-serif;
+font-size: 17px;
+padding-top: 1em;
+color: #000;/*testing*/
+
+}
+
+
+.image-3{
+  height: 350px;
+  width: 100%;
+  background: url("images/cont-image-2.jpg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+div.text-container {
+    margin: 60px 45px 55px;
+  }
+
+
+
+@media screen and (max-width:900px) {
+
+  
+
+.container{
+  flex-direction:column;
+}
+
+.container-maroon{
+  background-color: #f1cd8f;
+  flex-direction:column-reverse;
+}
+
+
+.container-blue{
+  background-color:#f1cd8f;
+  flex-direction:column;
+}
+
+div.image {
+    height: 320px;
+  }
+ div.text-container {
+    margin: 0 60px 60px;
+    max-width: 660px;
+  }
+
+  
+  .pimg2 .ptext h3 {
+    font-size: 35px;
+    padding-top: 2em;
+
+  }
+
+  .pimg3 .ptext h3 {
+    font-size: 35px;
+    padding-top: 2em;
+  }
+
+  .pimg4 .ptext h3 {
+    font-size: 35px;
+    padding-top: 2em;
+  }
+
+  .form-container{
+    max-width: 100%;
+  }
+
+
+  
+}
+
+
+  
+  
+  .section-light{
+    background: #f1cd8f;
+    background-image: url(images/vichy.png);
+    color:#666;
+    
+  }
+  
+  .section-dark{
+    background-color:#282e34;
+    background-image: url(images/vichygrey.png);
+    color:#ddd;
+  }
+  
+
+  .section-dark-blue{
+    background-color:#12233b;
+    background-image: url(images/vichyblue.png);
+    color:#ddd;
+  }
+
+  .section-dark-maroon{
+    background-color: rgb(68, 1, 1);
+    background-image: url(images/vichym.png);
+    color:#ddd;
+  }
+
+
+
+
+
+
+  
+  .ptext{
+    position:absolute;
+    top:30%;
+    width:100%;
+    text-align:center;
+    color:#000;
+    font-size:27px;
+    letter-spacing:8px;
+  }
+  
+  .ptext .border{
+    background-color:#111;
+    color:#fff;
+    padding:20px;
+  }
+  
+  .ptext .border.trans{
+    background-color:transparent;
+  }
+
+.ptext2 h3{
+  
+  font-size:60px;
+  font-family: 'Alfa Slab One', cursive;
+  color: rgb(194, 141, 6);
+  -webkit-text-stroke: 2px rgba(255, 255, 221, 0.842);
+  padding-top: 1em;
+    }
+
+
+  h1 {
+    font-family: 'Alex Brush', cursive;
+    color:rgb(206, 124, 17);
+    font-size:80px;
+    font-weight: 1000;
+    margin-bottom:34px;
+
+  }
+
+
+
+
+  h2{
+    letter-spacing:5px;
+    font-size:60px;
+    font-family: 'Alex Brush', cursive;
+    color:rgb(206, 124, 17);
+  }
+
+
+  /*contact form*/
+
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgb(206, 124, 17);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: rgb(223, 207, 187);
+
+  }
+
+  textarea{
+    background-color: rgb(223, 207, 187);
+
+  }
+  
+  input[type=submit] {
+    background-color: rgb(206, 124, 17);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: rgb(128, 74, 4);
+  }
+  
+  .form-container {
+    background-color:#69798a;
+    background-image: url(images/formimage.jpg);
+    background-size:cover;
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+    border: 2px solid rgb(206, 124, 17);
+
+  }
+
+  section p{
+    padding: 0.5em;
+    margin-top: 50px;
+  }
+
+  .footer{
+    background-color: black;
+    padding: 2em;
+    text-align: center;
+  }
+  
+
+  
+  
+  @media(max-width:568px){
+    .pimg1, .pimg2, .pimg3, .pimg4{
+      background-attachment:scroll;
+    }
+  }
+  

@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f7d794;
+    transition: 0.6s linear;
+    font-family: "open sans",sans-serif;
+}
+
+
+.container{
+    height:100vh;
+
+
+
+}
+
+.card-numb{
+    font-size: 170px;
+    font-family: "open sans",sans-serif;
+    color:#4e54721f;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    
+
+}
+
+h2{
+  text-align: center;
+  font-family: "open sans",sans-serif;
+
+  
+
+}
+
+
+
+.card {
+  max-width: 350px;
+  margin: 100px auto;
+  padding-top: 150px;
+  text-align: center;
+  font-family: "open sans",sans-serif;
+  border-radius:20PX;
+  background-color:#fff;
+  position: relative;
+  transition: .4s;
+
+
+}
+
+.card:hover{
+   
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+}
+
+.headings{
+    padding:20px 0 0 30px;
+
+}
+
+.card h1{
+color:#4E5472;
+font-size: 50px;
+text-align: left;
+font-family: "open sans",sans-serif;
+
+
+
+}
+
+.card > span{
+    width: 270px;
+	height: 2px;
+	margin: 20px 0 0 30px;
+	display: block;
+	background-color:#4e54723d;
+
+}
+
+.card h2{
+    font-size: 25px;
+    color:#4e5472ab;
+    text-align: left;
+    
+    
+    }
+
+    .card h3{
+        padding:20px 23px 5px 30px;
+        font-size: 25px;
+    color:#4e5472ab;
+    text-align: left;
+
+    }
+
+   
+
+.card-image img{
+  width: 350px;
+  height: 350px;
+  position:absolute;
+  left:100px;
+  bottom: 480px;
+  transition: .6s;
+  
+  
+}
+
+.card-image img:hover{
+    transform: scale(1.06);
+
+}
+
+
+
+
+.card p{
+
+    padding:20px 23px 30px 30px;
+    text-align: left;
+    line-height: 15pt;
+    font-size: 17px;
+    color:#4e5472ab;
+
+
+
+
+}
+
+.button{
+    font-size: 17px;
+    margin:0 180px 20px 0;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #e77f67;
+    text-align: left;
+    cursor: pointer;
+    width: auto;
+    font-size: 18px;
+    border-radius:13px;
+    
+    }
+
+    .card ul{
+        font-family: "open sans",sans-serif;
+        color:#4e5472ab;
+        text-align: left;
+        padding:20px 23px 30px 30px;
+        line-height: 20pt;
+
+    }
+
+    .card ul ol span{
+        font-weight: bold;
+
+    }
+    
+
+
+
+@media screen and (max-width: 250px){
+
+
+
+}

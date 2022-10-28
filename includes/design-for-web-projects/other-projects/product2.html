@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <div class="product-card">
+        <span></span>
+        <h1>NIKE EVOlUTION!</h1>
+        <p>Evolution Men's Running Shoe</p>
+        <h2>MEGA VALUE!</h2>
+        <div class="product-pic"></div>
+        <div class="product-colors">
+          <span class="blue active" data-color="#273c75" data-pic="url(images/trainer5new.png)"></span>
+          <span class="yellow" data-color="#fbc531" data-pic="url(images/trainer1new.png)"></span>
+          <span class="green" data-color="#1dd1a1" data-pic="url(images/trainer4new.png)"></span>
+          <span class="coral" data-color="#ff7f50" data-pic="url(images/trainer3new.png)"></span>
+        </div>
+    <div class="product-info">
+        <div class="product-price">$90</div>
+        <a href="#" class="product-button">Add to Cart</a>
+    </div>
+    </div>
+
+    <script>
+        $(".product-colors span").click(function(){
+           $(".product-colors span").removeClass("active");
+           $(this).addClass("active");
+           $("body").css("background",$(this).attr("data-color"));
+           $("product-price").css("color",$(this).attr("data-color"));
+           $(".product-button").css("color",$(this).attr("data-color"));
+           $(".product-pic").css("background-image",$(this).attr("data-pic"));
+
+        });
+    </script>
+
+      </body>
+      </html>

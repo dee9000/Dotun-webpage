@@ -1,0 +1,159 @@
+@font-face {
+	font-family: 'WhiteRabbit';
+	src: url('../fonts/WhiteRabbit.svg') format('svg'), url('../fonts/WhiteRabbit.ttf') format('truetype'), url('../fonts/WhiteRabbit.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family:'WhiteRabbit', 'Monda', monospace;
+
+  box-sizing: border-box;
+}
+
+body{
+  background: #f1f1f1;
+  
+}
+
+.card img {
+    margin: 2em 0 0 3em;
+	width: 90px;
+	height: 90px;
+	display: inline-block;
+	border-radius: 50%;
+	border: 2px solid burlywood;
+	box-sizing: border-box;
+    cursor: pointer;
+    transition: .9s;
+
+}
+
+/*emoji for front page*/
+
+.card img:hover {
+    transform: rotate(360deg);
+    -webkit-box-shadow: 0px 1px 18px 3px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 0px 1px 18px 3px rgba(0, 0, 0, 0.36);
+    box-shadow: 0px 1px 18px 3px rgba(0, 0, 0, 0.36);
+
+	
+}
+
+.card img:active{
+ 
+  box-shadow: inset 8px 8px 16px #222222, 
+            inset -8px -8px 16px #434343;
+            transition: .6s;
+
+}
+
+.module-header-container{
+    max-width: 50%;
+    text-align: justify;
+    margin: 0 auto -6em;
+    color:  #393a3a;
+    text-transform: uppercase;
+    
+
+}
+
+
+
+
+.lines {
+	width: 150px;
+	height: 5px;
+	margin-bottom: 1em;
+	display: block;
+    background-color: burlywood;
+  
+}/*remove if i link with other css*/
+
+.section{
+    background-color: #ddd8d8;
+    display: flex;
+    min-height: 60vh;
+    max-width: 50%;
+    margin: 10em auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+
+}
+
+.section:hover{
+    transition: .8s;
+    -webkit-box-shadow: 0px 1px 18px 3px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 0px 1px 18px 3px rgba(0, 0, 0, 0.36);
+    box-shadow: 0px 1px 18px 3px rgba(0, 0, 0, 0.36);
+}
+
+.accordion{
+  max-width: 600px;
+  padding: 20px;
+
+}
+
+.accordion-item{
+  border-bottom: 1px solid rgb(248, 245, 245);
+  padding: 20px 0;
+}
+
+.accordion-item .text{
+    line-height: 25pt;
+}
+
+.item-header{
+  padding: 14px 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.item-header .title{
+  font-family:'WhiteRabbit', 'Monda', monospace;
+  font-size: 20px;
+  font-weight: 600;
+  color:  #393a3a;
+  text-transform: uppercase;
+}
+
+.item-header .title:hover{
+    color: rgb(2, 94, 2);
+
+}
+
+
+
+section .text{
+  font-family:'WhiteRabbit', 'Monda', monospace;
+  font-size: 18px;
+  color: #8a8989;
+  padding: 0 6px;
+  max-height: 0;
+  line-height: 17pt;
+  overflow: hidden;
+  
+}
+
+
+
+.accordion-item.active .text{
+  max-height: 600px;
+  transition: .4s linear;
+}
+
+
+section .text a{
+    color: darkred;
+    text-decoration: none;
+    font-weight: 900;
+}
+a:visited{
+    color: rgb(2, 104, 2);
+}

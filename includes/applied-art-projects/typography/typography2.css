@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*This is the main body of the webpage*/
+body{
+    font-family: 'Italiana','Rajdhani', sans-serif;
+    font-size: 1.5em;
+    font-weight:500;
+    background-color: #FFFEF6;
+
+}
+
+
+/*navigation controls*/
+
+.menu {
+  overflow: hidden;
+  background-color:#fff;
+  border-bottom: 3px solid darkred;
+  width: 100%;
+  
+}
+
+.menu ul li{
+     float: right;
+      list-style-type: none;
+      display: block;
+
+    
+    
+}
+
+ .menu ul li a {
+      text-decoration: none;
+
+}
+.menu ul li a {
+
+  color: darkred;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2em;
+  text-decoration: none;
+  padding: 0.5em;
+
+  
+}
+
+.menu a:hover {
+  background-color: darkred;
+  color: #fff;
+  transition:background 0.3s linear 0s, color 0.3s linear 0s;
+}
+
+.menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+a:visited {
+    color: gray;
+}
+
+.menu .current{
+    background-color: darkred;
+    color: #fff;
+}
+
+
+
+
+
+
+/*header controls*/
+
+h1{
+    font-size: 5em;
+    margin-top: 2em;
+    margin-left: 0.3em;
+    font-family:'Limelight', cursive;
+}
+
+h2{
+    font-size: 2em;
+    margin-left: 1em;
+    font-family: 'Bilbo Swash Caps','Mrs Saint Delafield','Mr Dafoe', cursive;
+    padding-bottom: 1em;
+    color: darkred;
+
+}
+
+
+
+
+
+/*introduction controls*/
+.wear{
+    font-family: 'Dorsa','Six Caps', sans-serif;
+    font-size: 2em;
+}
+.sunscreen{
+    color: darkred;
+    font-family: 'Dorsa','Six Caps', sans-serif;
+    font-size: 2em;
+
+
+    
+}
+
+
+/*main body controls*/
+.wrapper{
+    margin:0 auto;
+    margin-top: 3em;
+    background-color: beige;
+    padding: 50px;
+    width: 50%;
+}
+
+/*main conent controls*/
+
+.large1{
+    font-weight: 700;
+    text-transform: capitalize;
+    color: darkred;
+    height: 1em;
+    width: 1em;
+    font-size: 3em;
+    padding-top: 0em;
+}
+
+
+.wearsunscreen_a{
+    color:darkred;
+    font-size: 1.0em;
+    font-family: 'Italiana', 'Rajdhani','Fredericka the Great', cursive;
+    font-weight: 700;
+    text-align: center;
+    width: 50%;
+
+
+}
+
+/*controls of quoted words*/
+.wearsunscreen_g{
+    font-family: 'Dorsa','Six Caps', sans-serif;
+    font-size: 3.5em;
+    color:darkorange;
+    text-align: center;
+}
+
+
+.wearsunscreen_b{
+    font-family: 'Italiana','Vast Shadow', cursive;
+    font-size: 1.1em;
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+    color:darkred;
+
+
+    
+}
+/*about section*/
+
+.about_section_header{
+    font-size: 2em;
+    margin-left: 1em;
+    font-family: 'Bilbo Swash Caps','Mrs Saint Delafield','Mr Dafoe', cursive;
+    padding-bottom: 1em;
+    color: darkred;
+    text-decoration: underline;
+    text-align: center;
+    
+}
+/*footer controls*/
+.down{
+    background-color: #000;
+    width: 100%;
+    height: 3em;
+    color: #fff;
+    padding: 1em;
+    border-top: 2px solid darkorange;
+     
+}
+
+.down_type{
+    color: darkorange;
+    font-family: times new roman;
+    text-align: center;
+    font-size: 1em;
+    padding-top: 0.5em;
+}
+.down_type2{
+    color: #fff;
+    font-family: times new roman;
+    text-align: center;
+    font-size: 1em;
+}
+
+
+
+
+@media screen and (max-width:547px){
+    .wrapper{
+        width:100%;
+    }
+    
+    .wear{
+        width: 100%;
+    }
+    .sunscreen{
+        width: 100%;
+    }
+    .menu{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

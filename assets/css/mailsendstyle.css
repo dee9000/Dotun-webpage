@@ -1,0 +1,55 @@
+@font-face {
+	font-family: 'WhiteRabbit';
+	src: url('../fonts/WhiteRabbit.svg') format('svg'), url('../fonts/WhiteRabbit.ttf') format('truetype'), url('../fonts/WhiteRabbit.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'whitrabt';
+	src: url('../fonts/whitrabt.eot');
+	src: url('../fonts/whitrabt.eot') format('embedded-opentype'), url('../fonts/whitrabt.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	width: 100%;
+    height: 100vh;
+    background-color: burlywood;
+	
+}
+.container5 {
+	width: 100%;
+	background-color: #e6dfdf;
+    margin-top: -1em;
+    padding-bottom: 3em;
+  
+	
+}
+
+.container5-headings {
+	max-width: 50%;
+	margin: auto;
+    padding: 1.5em 0 0 0;
+
+}
+
+.container5 h2 {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 20px;
+	padding: 0 0 0.5em 0;
+}
+
+.container5 h3 {
+	color: #535555;
+	font-size: 35px;
+}

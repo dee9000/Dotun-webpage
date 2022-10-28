@@ -1,0 +1,900 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, "helvetica neue", Helvetica, sans-serif;
+    font-size: 1em;
+    color:#000;
+    line-height: 1.6;
+    height: 100%;
+    max-width: 100%;   
+
+}
+
+
+.clearfix{
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+}
+
+
+
+
+#header{
+    
+     width:100%;
+    height: 5em;
+    background: #2d1606;
+    opacity:0.8;
+    line-height: 80px;
+    color: #fff;
+    border-bottom: 3px solid darkgoldenrod;
+    margin-bottom: 15rem;
+    
+    
+}
+
+
+
+
+#mainav ul{
+    width:100%;
+    height: 5em;
+    background: #2d1606;
+    line-height: 80px;
+    color: #fff;
+    margin-bottom: 15rem;
+
+}
+
+#mainav ul li{
+    list-style-type: none;
+    display: inline-block;
+     float: right;
+    margin-right: 1em;
+    
+}
+
+#mainav ul li a{
+   
+    text-decoration: none;
+    color: #fff;
+    padding: 1em;
+}
+
+#mainav ul li:hover{
+    background: darkgoldenrod;
+    transition: 0.60s;
+
+}
+
+
+/*Website Logo Controls*/
+ .mainlogotext{
+    float: left;
+    width: 5em;
+    cursor: pointer;
+    font-family: 'Bilbo', cursive;
+    font-size: 3em;
+    text-decoration:none;
+    color: bisque;
+    margin-left:1em;
+    margin-top: 0.2em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+    
+}
+
+/*remove underline from link*/
+
+.mainlogotext a{
+    text-decoration: none;
+    color: bisque;
+}
+
+
+
+
+
+/*phonenumber navigation bar*/
+
+.phonebar{
+    width:100%;
+    height: 2.5em;
+    margin-top: -15em;
+    
+    
+    
+}
+.navphonenumber{
+    width:100%;
+    height: 2.5em;
+    background-color:#000;
+    line-height: 2.5em;
+    opacity: 0.8;
+    color: #fff;
+    border-top:  2px solid goldenrod;
+    text-align: right;
+    padding-right: 3em;
+   
+}
+
+
+
+
+
+
+/*Main image fruits in the basket controls*/
+
+#showcase{
+    background-image: url(images/fruits2optimisedcopy2.jpg);
+    height: 100vh;
+    background-size: cover;
+    text-align: center;
+    margin: auto;
+}
+
+
+
+
+
+#showcase h2, h3{
+    font-family:"Century Gothic", CenturyGothic,AppleGothic,sans-serif;
+    
+
+}
+
+#showcase h2{
+    font-size: 3rem;
+    line-height: 1.7;
+    
+    color: #fff;
+        
+}
+
+#showcase h3{
+    font-size: 1.5rem;
+    line-height: 1.0;
+    color: #fff;
+       
+}
+
+
+
+
+
+/*
+
+#showcase .mainlogotext{
+    font-size: 60px;
+    line-height: 1.2;
+    letter-spacing:3px;
+    color:#c69c6d;
+    
+}
+
+*/
+
+
+
+    
+ 
+    #showcase .btn{
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    border: #fff 1px solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 50px;
+    font-family: "Century Gothic", CenturyGothic,AppleGothic,sans-serif; 
+    
+}
+   
+
+
+
+
+
+
+/*Read More Button*/
+
+    .btn:hover{
+    background: darkgoldenrod;
+    color: #000;
+}
+
+
+
+
+
+
+
+/*Middle section containing Welcome Message*/
+
+#section-a{
+    
+    width: 100%;
+    background-color: #FFFAE9;
+    background: liner-gradient(#FFFAE9,darkgoldenrod );   
+}
+
+
+
+
+
+
+
+
+
+.wrapper{
+    
+   background-color: #FFFAE9;
+    height: 80vh;
+    border-top: 4px solid darkgoldenrod;
+    max-width: 75%;
+    margin-left: auto ;
+    margin-right: auto ;
+    text-align: center;
+    
+    
+}
+
+/*CSS FOR NEW BUTTONS TO EXPERIMENT CHANGE OF COLOR*/
+
+
+#change{
+    border: 2px solid darkred;
+    background-color: darkgoldenrod;
+    color: beige;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 5px 5px;
+}
+
+#back{  
+    border: 2px solid darkred;
+    background-color: darkgoldenrod;
+    color: beige;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 5px 5px;
+
+}
+
+/*HOVER EFFECT FOR NEW BUTTONS*/
+
+
+#change:hover {
+    opacity: 0.7;
+    border: 3px solid gold;
+    color: gold;
+}
+
+#back:hover {
+    opacity: 0.7;
+    border: 3px solid gold;
+    color: gold;
+}
+/*CSS FOR NEW BUTTONS TO EXPERIMENT CHANGE OF COLOR END*/
+
+
+
+
+
+
+.wlcm{
+    text-align: center;
+    margin-top: 0.5em;
+    color:darkgoldenrod;
+    font-size: 4em;
+    font-family: 'Monsieur La Doulaise', cursive;
+
+    
+}
+
+
+
+
+
+
+
+.wlcm0{
+    text-align: center;
+    color:#fff;
+    font-family: "Century Gothic", CenturyGothic,AppleGothic,sans-serif; 
+    font-size: 10px;
+    
+}
+
+
+
+
+
+
+
+.intro{
+    padding-top: 5em;
+    
+}
+
+
+
+
+
+
+
+/*underline afer discover*/
+
+hr.underline {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+
+
+
+
+
+
+
+.wlcm2{
+    
+    
+    text-align: center;
+    color: #000;
+    font-size: 1.6em;
+    
+}
+
+
+
+
+
+
+
+
+/*history of family store quote*/
+.wlcm1{
+    
+    width: 55%;
+    padding-left: 7em;
+    margin-top: 1.5em;
+    text-align: left;
+    float: left;
+    font-size: 1.5em;
+    font-family: 'Shadows Into Light', sans-serif;  
+    
+}
+
+
+
+
+
+
+
+/*signature of founder*/
+.jrclarke{
+    font-weight: bold;
+    color: darkred;
+}
+
+
+
+
+
+
+
+
+
+/*image and position of store founder*/
+.mrclarke{
+    margin-bottom: 2em;
+    float: right;
+    shape-outside: circle();
+    
+
+    
+    
+    
+}
+
+
+
+
+
+
+/*image and position of store founder*/
+
+.mrclarke1{
+    border-radius: 50%;
+    border: 2px solid darkgoldenrod;
+    margin-top:2em;
+    margin-right: 10em;
+
+
+    
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+/*products section*/
+
+.wrapper-2{
+    
+   background-color: #3D3C38;
+    height: 80vh;
+    border-top: 2px solid darkgoldenrod;
+    clear: both;
+}
+    
+
+
+
+
+
+
+
+
+
+/*controls the contact us section of the website*/
+.wlcm3{
+    
+    
+    text-align: center;
+    color:goldenrod;
+    font-size: 2.0em;
+    margin-top: 1.1em;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/*controls the contact us quote*/
+.goldentext{
+    text-align: center;
+    color: darkgoldenrod;
+    font-family:'Shadows Into Light', sans-serif;
+    font-size: 1.5em;
+}
+
+
+
+
+
+/*controls the 3 images of the products*/
+.snap_card {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+
+
+
+
+.desc{
+    margin: 10px;
+    margin-top: 5em;
+    margin-left: 6.5em;
+    border: 5px solid darkgoldenrod;
+    border-radius: 30px;
+    float: left;
+    max-width:23%;
+    cursor: pointer; 
+    background-color: darkgoldenrod;
+    overflow: hidden;
+}
+
+.snap_card{
+    font-weight: bold;
+    font-family: "Century Gothic", CenturyGothic,AppleGothic,sans-serif; 
+    text-align: center;
+    display: block;
+    background-color: darkgoldenrod;
+
+}
+
+
+
+
+
+
+
+
+
+
+/*Controls for the overlay effect*/
+
+.desc{
+    position: relative;
+    width: 50%;
+}
+
+.imageset1 {
+  display: block;
+  width: 120%;
+  height: 300;
+  /*border: 0.2em solid #fff;*/
+  border-radius: 30px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: darkgoldenrod;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.desc:hover .overlay {
+  height: 100%;
+    opacity: 0.9;
+}
+
+
+
+
+
+
+
+/*awards section */
+
+.wrapper-3{
+    
+   background-color:#FFFAE9;
+   max-width:100%;
+   padding-left: 15em;
+
+   clear: left;
+
+}
+
+
+
+
+.awards{
+    
+   float: left;
+    margin: 1.0em;
+    margin-top: 2em;
+   
+     
+    
+    
+}
+
+
+
+
+
+
+
+/*contact us section controls*/
+.wrapper-4{
+    
+   background-color: #839bb2;
+    background-image: url(images/footerblue.jpg);
+    background-repeat: repeat-y;
+    border-top: 2px solid darkgoldenrod;
+    clear: both;
+    max-width: 100%;
+}
+
+.contacontainer-1{
+  width: 100%;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+
+
+/*contact us form*/
+
+
+
+.contacontainer {
+    border-radius: 5px;
+    background-color: dimgray;
+    border: 3px solid darkgoldenrod;
+    float: left;
+    margin-left: 7em;
+    margin-bottom: 2em;
+    padding: 20px;
+    width: 35%;
+}
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid darkgoldenrod;
+    background-color:#f7f7e3;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: goldenrod;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: darkgoldenrod;
+}
+
+
+
+/*color for text field*/
+.goldform{
+    
+    color:goldenrod;
+    
+}
+
+
+
+
+
+
+/*google map*/
+
+.mapcover-1{
+    
+    float: right;
+
+
+}
+
+#map{
+    
+    margin-right: 14em;
+    border: 3px solid darkgoldenrod;
+    border-radius: 0.3em;
+    
+    
+}
+
+
+/*table for hours of work*/
+
+.schedule{
+    
+    height: 11em;
+    margin-top: 1.5em;
+    margin-right: 18em;
+    float: right; 
+    clear: right;
+    
+} 
+
+#customers {
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+
+
+#customers td, #customers th {
+    border: 1px solid darkgoldenrod;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f7f7e3;}
+#customers tr:nth-child(odd){background-color: #fff;}
+
+
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: darkgoldenrod;
+    color: white;
+    
+}
+
+
+
+
+
+
+
+
+/*footer section*/
+
+.footer-1{
+    
+    width: 100%;
+    height: 40%;
+    background-color: darkgray;
+    background-image: url(images/footergreyaltered.jpg);
+    border-top: 3px solid goldenrod;
+    text-align: center;
+    clear: right;
+
+}
+
+
+
+
+
+
+
+
+/*controls for the font awesome social media icons*/
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 45px;
+  border-radius: 50%;
+  margin-top: 1em;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+    border: 3px solid gold;
+    color: gold;
+}
+
+.fa-facebook {
+  background: #2a2a2a;
+  color: gray;
+  border: 3px solid gray;
+}
+
+.fa-twitter {
+  background: #2a2a2a;
+  color: gray;
+  border: 3px solid gray;
+
+}
+
+.fa-instagram {
+  background: #2a2a2a;
+  color: gray;
+  border: 3px solid gray;
+
+}
+
+.footertalk{
+    text-align: center;
+    font-family: 'Shadows Into Light', sans-serif;
+    color: gray;
+    margin-top: 2em;
+    font-size: 1.5em;
+}
+    
+    
+.footertalk1{
+    text-align: center;
+    font-family: "Century Gothic", CenturyGothic,AppleGothic,sans-serif;
+    color: darkgoldenrod;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    font-size: 0.8em;
+}
+
+
+
+/*products pages section*/
+
+/*product image */
+
+.prd{
+    
+   
+   text-align: center;
+   background-color:#FFFAE9;
+       padding-top: 4em;
+
+    
+}
+
+
+.producttable{
+       background-color:#FFFAE9;
+    
+
+}  
+
+.goldentext2{
+    
+    color: darkgoldenrod;
+    font-family: "Century Gothic", CenturyGothic,AppleGothic,sans-serif;
+    
+}
+       
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+    margin: 0 auto;
+    
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+     
+}
+
+th{
+    background-color: darkgoldenrod;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+
+
+    
+
+   
+
+
+
+
+
+
+
+
+
+    
+
+

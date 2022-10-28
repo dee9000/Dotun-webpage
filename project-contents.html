@@ -1,0 +1,101 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="assets/css/contents-2.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+      <div class="card">
+         <a href="index.php"> <img src="assets/img/moi.png"></a>
+      </div>
+      <div class="module-header-container">
+         <span class="lines"></span>
+         <h1>PROJECTS</h1>
+         <h2>Things i've been working on..</h2>
+      </div>
+      <section class="section">
+         <div class="accordion">
+         <div class="accordion-item">
+            <div class="item-header">
+               <h1 class="title">UI INTERFACES</h1>
+               <div class="fa fa-gear fa-spin"></div>
+            </div>
+            <!-- CONTENT SECTION ONE-->
+            <div class="list">
+               <ul>
+                  <li>
+                     <p class="text">Product Card One: <a href="includes/design-for-web-projects/other-projects/product.html">e-commerce Designer chair </a><br></p>
+                  </li>
+                  <li>
+                     <p class="text">Product Card Two: <a href="includes/design-for-web-projects/other-projects/product2.html">e-commerce Nike Trainers </a><br></p>
+                  </li>
+                  <li>
+                     <p class="text">Product Card Three: <a href="includes/design-for-web-projects/other-projects/product3.html">Educational inspiration </a><br></p>
+                  </li>
+                  <li>
+                     <p class="text">Product Card Four: <a href="includes/design-for-web-projects/other-projects/product4.html"> Movie Inspiration </a><br></p>
+                  </li>
+                  <li>
+                     <p class="text">Product Card Five: <a href="includes/design-for-web-projects/media-player2/index.php">Javascript Mobile Media Player</a><br></p>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="accordion-item">
+            <div class="item-header">
+               <h1 class="title">LANDING PAGES</h1>
+               <div class="fa fa-gear fa-spin"></div>
+            </div>
+            <!-- CONTENT SECTION TWO-->
+            <div class="list">
+               <ul>
+                  <li>
+                     <p class="text">Movie promo: <a href="includes/applied-art-projects/kenshin-design/index.html">Rurouni Kenshin</a><br></p>
+                  </li>
+                  <li>
+                     <p class="text">Brand Idea: <a href="includes/coke-project/coke.html">Coca-Cola</a><br>
+                  </li>
+                  <li>
+                     <p class="text">Therapist Services: <a href="includes/claudia webpage/index.php">Psychologist</a><br></p>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="accordion-item">
+            <div class="item-header">
+               <h1 class="title">FORMS/WEATHER/TRAVEL</h1>
+               <div class="fa fa-gear fa-spin"></div>
+            </div>
+            <!-- CONTENT SECTION THREE-->
+            <div class="list">
+               <ul>
+                  <li>
+                     <p class="text">Forms login: <a href="includes/design-for-web-projects/other-projects/product6.html">Gaming log in</a><br></p>
+                  </li>
+                  <li>
+                     <p class="text">Travel Site: <a href="includes/design-for-web-projects/other-projects/product8.html">Mobile View - Contents</a><br>
+                  </li>
+                  <li>
+                     <p class="text">Travel Site: <a href="includes/design-for-web-projects/other-projects/product7.html">Mobile View - Page</a><br></p>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </section>
+      <script type="text/javascript">
+         $(".item-header").click(function(){
+           $(".accordion-item").removeClass("active");
+           $(this).parent().addClass("active");
+           $(".icon").text("+");
+           $(this).children(".icon").text("-");
+         });
+      </script>
+   </body>
+</html>
+

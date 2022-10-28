@@ -1,0 +1,188 @@
+
+<html lang="en">
+<head>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <title> My Birkbeck coursework redesign page</title>
+	  <link rel="stylesheet" href="dropdown.css">
+	  <link href='https://fonts.googleapis.com/css?family=Cinzel:400,700%7CBaumans' rel='stylesheet' type='text/css'/>
+	  <link href="https://fonts.googleapis.com/css?family=Bilbo|Yellowtail" rel="stylesheet">
+	  <script src="carousel.js"></script>
+<!--[if lt IE 9]><link rel="stylesheet" href="./ie.css"><![endif]-->
+</head>
+	
+<body class="news">
+  <header>
+<h1>Lifestyle Photography</h1>
+      <h2>Your one stop insider view on all things Photography</h2>
+    <div class="nav">
+		  <ul>
+			<li class="home"><a href="#">Home</a></li>
+			<li class="tutorials"><a href="biography.html">Biography</a></li>
+			<li class="about"><a href="#gal-01">Gallery</a></li>
+			<li class="news"><a href="#">Blog</a></li>
+			<li class="contact"><a href="#">Contact</a></li>
+		  </ul>
+    </div>
+</header>
+    
+    <!-- Slideshow container -->
+<div class="container-black">
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="images/img1edit.jpg" style="width:100%" height="100%">
+    <div class="text">Day at the museum</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/img2.jpg" style="width:100%" height="90%">
+    <div class="text">Road Trip</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/littleone.jpg" style="width:100%" height="90%">
+    <div class="text">Snow fun</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+	<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+</div>
+    
+<!--middle bit call to action-->
+    
+    
+      
+ <div class="section parallax1">
+           <h3>STUNNING PHOTOGRAPHY PORTFOLIO </h3>
+    <h4>Welcome to My Photography Portfolio Blog </h4>
+     <p class="lead">Browse through Landscape, Family, Lifestyle, and Travel photos. Plus, dont forget to read all about my <a href="blog.html">Favourite Camera Gear Blog</a>.</p>
+        </div>
+            
+            
+<!--middle bit call to action end-->
+<!--image galery-->
+<wrapper>
+	<a id="gal-01"></a>
+
+
+				<span class="gallery-font"><h3>Image Gallery</h3></span>
+		<div class="responsive">
+		  <div class="gallery">
+			  <img src="images/familcook.jpg" alt="Trolltunga Norway" width="300" height="200">
+
+			<div class="desc">Family</div>
+		  </div>
+		</div>
+
+
+		<div class="responsive">
+		  <div class="gallery">
+			  <img src="images/drink.jpg" alt="Forest" width="600" height="400">
+
+			<div class="desc">Travel</div>
+		  </div>
+		</div>
+
+		<div class="responsive">
+		  <div class="gallery">
+			  <img src="images/wilderness.jpg" alt="Northern Lights" width="600" height="400">
+
+			<div class="desc">Landscape</div>
+		  </div>
+		</div>
+
+		<div class="responsive">
+		  <div class="gallery">
+			  <img src="images/workout.jpg" alt="Mountains" width="600" height="400">
+
+			<div class="desc">lifestyle</div>
+		  </div>
+		</div>
+
+		<div class="clearfix"></div>
+
+		<div style="padding:6px;">
+				</div><!--/image gallery-->
+	</wrapper>
+	
+	
+<div class="section2">
+		<div class="parallax">
+		
+			<h4> Dont forget to read all about my <a href="blog.html">Favourite Camera Gear </a>Blog</h4>
+		
+		</div>
+</div>
+	<div class="wrapper2">
+		           <h5>contact us</h5>
+		 <form action="/action_page.php">
+                    <label for="fname" class="goldform">Full Name</label>
+                    <input type="text" id="fname" name="full name" placeholder="Your name..">
+
+                    <label for="email" class="goldform">eMail address</label>
+                    <input type="text" id="email" placeholder="Your email address..">
+
+                    <label for="subject" class="goldform">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
+
+                    <input type="submit" value="Submit">
+                  </form>
+	</div>
+	  
+ 
+    
+<!--javascript code for image carousel-->
+    
+  <script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+    </script>  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+     <footer><p>Copyright &copy; Adedotun Asunmo Website | Birkbeck University of London 2016</p></footer>
+</html>

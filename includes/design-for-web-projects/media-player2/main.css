@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(48, 48, 48); 
+    transition: 0.6s linear;
+    font-family: "open sans",sans-serif;
+    height:100vh;
+}
+
+
+
+.product-card{
+    max-width: 400px;
+    background-color: #ffffff;
+    margin: 100px auto;
+    border: 10px solid gray;
+    border-radius: 45px;                                                                                                                                                                                                       
+    font-family: "open sans",sans-serif;
+    position: relative;
+    transition: .8s;
+    background-image: url(images/swirl.jpeg);
+
+
+
+}
+
+.product-card h1{
+    font-size: 55px;
+    font-family: 'Teko', sans-serif;
+    padding: 150px 0 0 35px;
+    color:#4e5472;
+    text-shadow: rgb(247, 243, 234) 2px 0px 0px, rgb(247, 243, 234) 1.75517px 0.958851px 0px, rgb(247, 243, 234) 1.0806px 1.68294px 0px, rgb(247, 243, 234) 0.141474px 1.99499px 0px, rgb(247, 243, 234) -0.832294px 1.81859px 0px, rgb(247, 243, 234) -1.60229px 1.19694px 0px, rgb(247, 243, 234) -1.97998px 0.28224px 0px, rgb(247, 243, 234) -1.87291px -0.701566px 0px, rgb(247, 243, 234) -1.30729px -1.5136px 0px, rgb(247, 243, 234) -0.421592px -1.95506px 0px, rgb(247, 243, 234) 0.567324px -1.91785px 0px, rgb(247, 243, 234) 1.41734px -1.41108px 0px, rgb(247, 243, 234) 1.92034px -0.558831px 0px;}
+
+#p-track{
+    font-style: italic;
+    font-weight: 900;
+    color: darkred;
+    text-shadow: rgb(247, 243, 234) 1px 0px 0px, rgb(247, 243, 234) 0.540302px 0.841471px 0px, rgb(247, 243, 234) -0.416147px 0.909297px 0px, rgb(247, 243, 234) -0.989992px 0.14112px 0px, rgb(247, 243, 234) -0.653644px -0.756802px 0px, rgb(247, 243, 234) 0.283662px -0.958924px 0px, rgb(247, 243, 234) 0.96017px -0.279415px 0px;
+
+
+}
+
+.headings p{
+    padding-left: 1.7em;
+    font-size: 18px;
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+
+
+ .fa-star{
+    padding: 10px 0 0 10px;
+    margin: 10px 0 40px 20px;
+    line-height: 25pt;
+    letter-spacing: 1pt;
+    color: rgb(218, 121, 3);
+    font-weight: 900;
+    font-size: 13px;
+    display: flex;
+  
+
+}
+
+
+
+.continents ul ol:hover{
+    color: grey;
+    cursor: pointer;
+}
+
+.continents ul ol{
+    padding: 15px 25px 0 5px;
+   
+
+   
+}
+
+.container{
+    background-color: #e9e4dafa;
+    padding: 5px 60px 50px 30px;
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
+    font-weight: 900;
+
+}
+
+ #demo{
+    text-align: center;
+    padding:1.5em;
+}
+
+table img{
+    border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        padding:0.5em;
+        margin: 0.5em;
+        border:3px solid#4e5472d8;
+        ;
+
+
+}
+
+.fas{
+    color: rgb(224, 147, 3);
+}
+
+.fa-play{
+    padding-left: 1em;
+
+}
+
+.fa-pause{
+    padding-left: 1em;
+
+}
+.fa{
+    color: rgb(224, 147, 3);
+}
+
+.fas:hover{
+    cursor: pointer;
+}
+.fas:active{
+    color: #ffffff;
+}
+
+.container td{
+    font-size: 13px;
+    font-family: 'JetBrains Mono', monospace;
+    color: rgb(90, 88, 88);
+
+}
+
+.container tr{
+    transition: .5s;
+
+}
+
+.container h3{
+    font-family: 'Orbitron', sans-serif;
+}
+
+.container tr:hover{
+   
+      border-radius: 7px;
+      cursor: pointer;
+      color: darkred;
+      transform: scale(1.04);
+
+}
+
+.container td:hover{
+    color: darkred;
+}
+
+
+
+.icons{
+    text-align: center;
+    padding: 10px;
+    background-color:#F7F7F9;
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+
+}
+
+.icons i{
+    padding:30px;
+}
+
+
+
+

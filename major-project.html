@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/contents.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <div class="card">
+     <a href="index.php"> <img src="assets/img/moi.png"></a>
+   </div>
+
+    <div class="module-header-container">
+      <span class="lines"></span>
+      <h1>Course Modules and Content</h1>
+      <h2>Major Project</h2>
+    
+  </div>
+    <section class="section">
+    <div class="accordion">
+      <div class="accordion-item">
+        <div class="item-header">
+          <h1 class="title">Concept</h1>
+          <div class="fa fa-gear fa-spin"></div>
+        </div>
+        <p class="text">Crit - 01 :<a href="assets/papers/business-cultral-context.pdf">Business/Cultural Context</a></p>
+        
+          
+      </div>
+
+      <div class="accordion-item">
+        <div class="item-header">
+          <h1 class="title">Toonsville</h1>
+          <div class="fa fa-gear fa-spin"></div>
+        </div>
+        <p class="text">Retro cartoon website :<a href="https://www.toonsville.co.uk">Toonsville</a></p>
+        <p class="text">Final Report on :<a href="assets/papers/Toonsville-final-report.pdf">Toonsville</a></p>
+
+      </div>
+    </section>
+
+
+
+    <script type="text/javascript">
+      $(".item-header").click(function(){
+        $(".accordion-item").removeClass("active");
+        $(this).parent().addClass("active");
+        $(".icon").text("+");
+        $(this).children(".icon").text("-");
+      });
+    </script>
+  </body>
+</html>

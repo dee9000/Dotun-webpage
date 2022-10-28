@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: "open sans",sans-serif;
+    background-color: #81ecec;
+
+
+
+}
+
+.main h2{
+    text-align: center;
+    color: darkorange;
+    padding: 2em 0 0 0;
+
+}
+
+.main{
+    max-width: 500px;
+    background-image: url(images/sunsethorizon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 100px auto;
+    padding: 0 0 5em 0;
+    border-radius: 50px;
+
+}
+
+  
+.container {
+    padding: 50px;
+    position: relative;
+    margin: auto;
+    width: 380px;
+    position: relative;
+    z-index: 1;
+    border-radius: 50px;
+	background: inherit;
+    overflow: hidden;
+    background: url(images/cheat.png);
+    background-size: contain;
+}
+
+.container:before {
+	content: "";
+	position: absolute;
+    background: inherit;
+	z-index: -1;
+	top: -20px;
+	left: -20px;
+	right: -20px;
+	bottom: -20px;
+	box-shadow: inset 0 0 500px rgba(255, 255, 255, .2);
+	filter: blur(5px);
+	margin: -20px;
+}
+ 
+     
+
+
+
+.imgcontainer img{
+    width: 220px;
+    height: 200px;
+    margin: 20px 0 9px 0;
+    
+}
+
+label{
+    color: #ffff;
+    font-size:20px;
+    
+}
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 20px;
+    box-sizing: border-box;
+    border: none;
+
+  }
+  
+  button {
+    background-color: #fab1a0;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 20px;
+    margin: 8px auto;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    transition: .6s;
+  }
+  
+  button:hover {
+    background-color: #fa957e;
+
+    
+  }
+  
+  
+  
+  .imgcontainer {
+    text-align: center;
+   
+  }
+  
+  
+
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+  
+  }
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/contents.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <div class="card">
+     <a href="index.php"> <img src="assets/img/moi.png"></a>
+   </div>
+
+    <div class="module-header-container">
+      <span class="lines"></span>
+      <h1>Course Modules and Content</h1>
+      <h2>Design for web</h2>
+    
+  </div>
+    <section class="section">
+    <div class="accordion">
+      <div class="accordion-item">
+        <div class="item-header">
+          <h1 class="title">3 well designed objects</h1>
+          <div class="fa fa-gear fa-spin"></div>
+        </div>
+        <p class="text">The canon EOS60D DSLR <a href="includes/design-for-web-projects/dslrcamera/index.html">Camera</a></p>
+          <p class="text">My Trusted <a href="includes/design-for-web-projects/nailclipper/">Nail Clipper</a></p>
+            <p class="text">The Remington HC <a href="includes/design-for-web-projects/remington/index.html">Hair Clipper</a></p>
+      </div>
+
+      <div class="accordion-item">
+        <div class="item-header">
+          <h1 class="title">Favourite Websites</h1>
+          <div class="fa fa-gear fa-spin"></div>
+        </div>
+        <p class="text">The New York Times :<a href="https://www.nytimes.com/">Website</a></p>
+        <p class="text">Television :<a href="https://www.nbc.com/">NBC Network</a></p>
+        <p class="text">The huffingtonpost :<a href="https://testkitchen.huffingtonpost.com/latinos-break-the-mold/">Latinos break the mold</a></p>
+
+      </div>
+
+      <div class="accordion-item">
+        <div class="item-header">
+          <h1 class="title">Small Business Project</h1>
+          <div class="fa fa-gear fa-spin"></div>
+        </div>
+        <p class="text">Clarke's :<a href="includes/design-for-web-projects/smallbusiness/index.html">Small Business Project</a></p>
+        <p class="text">Clarke's :<a href="includes/design-for-web-projects/smallbusiness2/index.php">Small Business Project Revised</a></p>
+
+      </div>
+    </section>
+
+
+
+    <script type="text/javascript">
+      $(".item-header").click(function(){
+        $(".accordion-item").removeClass("active");
+        $(this).parent().addClass("active");
+        $(".icon").text("+");
+        $(this).children(".icon").text("-");
+      });
+    </script>
+  </body>
+</html>

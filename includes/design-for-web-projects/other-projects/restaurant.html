@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>restaurant</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="web design portfolio">
+  <meta name="keywords" content="web-design html template, portfolio, html5, sass, jquery">
+  <meta name="author" content="Dotun Asunmo">
+   <script src="jquery-3.4.1.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+   <script src="parallax.min.js"></script>
+   
+  <link rel="stylesheet" href="restaurant.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fa fa-bars"></i>
+            </span>
+            <a href="#" class="logo"><img src="images/logo.png" height="50"></a>
+            <ul class="main-nav" id="js-menu">
+                <li>
+                    <a href="#" class="nav-links">Welcome</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-links">Menu</a>
+                </li>
+               
+                <li>
+                    <a href="#" class="nav-links">News</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-links">Reservations</a>
+              </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="pimg1" data-parallax="scroll" data-z-index="-100" data-image-src="images/main3.jpg" data-bleed="123">
+        <div class="ptext">
+          <span class="border trans">
+           <img src="images/logo.png" height="250">
+            <h1>La grille</h1>
+            <h3>the gourmet experience</h3>
+
+         
+        </div>
+      </div>
+    
+      <section class="section section-light">
+        <h2>Discover</h2>
+        <div class="about-border-one"></div>
+        <span>*</span>
+        <div class="container" data-aos="fade-right">
+          <div class="image"></div>
+          <div class="text-container">
+          <h4>EXQUISITE</h4>
+          <p>The Grille! is a modern brasserie in the heart of St. James’s, London. Offering breakfast, lunch, dinner and weekend brunch. </p>      
+          </div>
+          </div>
+      </section>
+    
+
+
+      <div class="pimg2" data-parallax="scroll" data-z-index="-100" data-image-src="images/sidegrill.jpg" data-bleed="123">
+        <div class="ptext">
+          <span class="ptext2">
+            <h3>Tasteful Recipes</h3>
+          </span>
+        </div>
+      </div>
+    
+    
+      <section class="section section-dark-maroon">
+        <h2>Menu</h2>
+        <div class="about-border"></div>
+        <span>*</span>
+        <div class="container-maroon" data-aos="fade-right">
+          <div class="text-container">
+          <h4>GOURMET</h4>
+          <p>The 112 cover restaurant revolves around a spectacular central decanting bar, the perfect place for guests to sit and soak up the buzz of the room. </p>      
+          </div>
+          <div class="image-2"></div>
+          </div>
+      </section>
+    
+      <div class="pimg3"  data-parallax="scroll" data-z-index="-100" data-image-src="images/burgerwoodlight.jpg" data-bleed="123">
+        <div class="ptext">
+          <span class="ptext2">
+            <h3>The Perfect Setting</h3>
+          </span>
+        </div>
+      </div>
+    
+      <section class="section section-dark-blue">
+        <h2>Culinery delights</h2>
+        <div class="about-border"></div>
+        <span>*</span>
+        <div class="container-blue" data-aos="fade-right">
+          <div class="image-3"></div>
+          <div class="text-container">
+          <h4>REMARKABLE</h4>
+          <p>Great location for orgnising events and get togethers at amazing prices, Come join us. </p>      
+          </div>
+          </div>
+      </section>
+
+      <div class="pimg4" data-parallax="scroll" data-z-index="-100" data-image-src="images/main1light.jpg" data-bleed="123">
+        <div class="ptext">
+          <span class="ptext2">
+             <h3>Reservations</h3>
+          </span>
+        </div>
+      </div>
+
+      <section class="section section-dark">
+        <h2>Contact Us</h2>
+        <div class="about-border"></div>
+        <span>*</span>
+        <div class="form-container">
+          <form action="/action_page.php">
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis.
+        </p>
+
+      </section>
+
+      
+
+   
+         
+        </div>
+      </div>
+
+<footer class="footer">
+  <p>LA Grille Tavern | 1234 Telegrapg Ave, Berkeley, CA 12345 | (555) 555-5555 | eurekanova@gmail.com
+    <p>&copy; DA Designs</p>
+</footer>
+
+
+
+
+
+<!--SLIDE IN EFFECT START-->
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset:100,
+    duration:1000
+  });
+</script>
+
+<!--NAVIGATION HAMBURGER-->
+
+<script>
+    let mainNav = document.getElementById("js-menu");
+let navBarToggle = document.getElementById("js-navbar-toggle");
+
+navBarToggle.addEventListener("click", function() {
+  mainNav.classList.toggle("active");
+});
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+

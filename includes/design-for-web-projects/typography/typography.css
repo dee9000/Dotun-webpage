@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+body{
+    background-color: #A52A2A;
+    font-family:'Special Elite', cursive;
+    font-family: 'Federo', sans-serif;
+    text-align: justify;
+}
+
+
+ ul li{
+    float: right;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    display:block;
+     
+    
+     
+}
+
+
+
+nav ul li a{
+    text-decoration: none;
+   
+  
+}
+
+/*unvisited link*/
+
+a:link {
+    color: #fff;
+}
+
+/* visited link */
+a:visited {
+    color: #fff;
+}
+
+
+
+.header{
+    
+    padding-bottom: 5em;
+    margin-top: -5em;
+    text-align: center;
+ 
+    
+}
+
+
+h1,h2,h3{
+    text-align: center;
+    background-color: #A52A2A;
+    color: #fff;
+      
+    
+    
+    
+}
+
+
+
+h1{
+    padding-top: 1em;
+    font-size: 5em;
+    
+    
+}
+
+
+
+
+h3{
+    padding-bottom: 2.0em;
+ 
+}
+
+
+.wrapper{
+    
+    height: 100%;
+    width: 60%;
+    background-color:bisque;
+    padding: 5em 5em;
+    margin: 0 auto;
+}
+
+.inner-wrapper{
+    
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+p{
+    
+    font-size: 1.3em;
+    line-height: 2em;
+}
+
+.hold{
+    color:#A52A2A ;
+    font-size: 1.8em;
+    font-family:'Federo', sans-serif;
+}
+
+
+.quotation{
+    
+    color: #000;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.3em;
+
+    
+}
+
+
+.patriot_red{
+    font-family: 'Fredericka the Great', cursive;
+    font-size:1.5em;
+    color:red;
+    
+}
+
+.patriot_blue{
+    font-family: 'Fredericka the Great', cursive;
+    font-size:1.5em;
+    color:blue;
+    
+}
+
+
+
+

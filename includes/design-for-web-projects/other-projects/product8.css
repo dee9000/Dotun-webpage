@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #3498db;
+    transition: 0.6s linear;
+    font-family: "open sans",sans-serif;
+    height:100vh;
+}
+
+
+
+.product-card{
+    max-width: 400px;
+    background-color: #ffffff;
+    margin: 100px auto;
+    border-radius: 25px;                                                                                                                                                                                                       
+    font-family: "open sans",sans-serif;
+    position: relative;
+    transition: .6s;
+    background-image: url(images/beach-two.jpg);
+
+
+
+}
+
+.product-card h1{
+    font-size: 35px;
+    padding: 150px 0 0 35px;
+    color:#4e5472;
+}
+
+
+.continents ul{
+    padding: 10px 10px 30px 35px;
+    line-height: 25pt;
+    letter-spacing: 1pt;
+    color: rgb(218, 121, 3);
+    font-weight: 900;
+    font-size: 13px;
+    display: flex;
+  
+
+}
+
+
+
+.continents ul ol:hover{
+    color: grey;
+    cursor: pointer;
+}
+
+.continents ul ol{
+    padding: 15px 25px 0 5px;
+   
+
+   
+}
+
+.container{
+    background-color: #f7f3eafa;
+    padding: 5px 10px 20px 20px;
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
+
+}
+
+.container-one img{
+    border-radius: 18px;
+    width: 130px;
+    height: 110px;
+}
+
+.container-one{
+    display: flex;
+    padding: 15px 25px 15px 5px;
+    cursor: pointer;
+
+}
+
+.container-one-intro{
+    margin: 10px 3px 10px 30px;
+    line-height: 15pt;
+}
+
+.container-one h2{
+    font-size: 20px;
+    color: rgb(173, 2, 2);
+    text-decoration: none;
+}
+
+.container-one p{
+    font-size: 13px;
+    color: darkslategray;
+}
+
+a:visited {
+    color: rgb(173, 2, 2);
+  }
+  a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+
+
+/*next*/
+
+.container-two img{
+    border-radius: 18px;
+    width: 130px;
+    height: 110px;
+}
+
+.container-two {
+    display: flex;
+    padding: 15px 25px 15px 5px;
+    cursor: pointer;
+
+}
+
+.container-two-intro{
+    margin: 10px 3px 10px 30px;
+    line-height: 15pt;
+}
+
+.container-two  h2{
+    font-size: 20px;
+    color: rgb(173, 2, 2);
+}
+
+.container-two  p{
+    font-size: 13px;
+    color: darkslategray;
+}
+
+/*next*/
+
+.container-three img{
+    border-radius: 18px;
+    width: 130px;
+    height: 110px;
+}
+
+.container-three{
+    display: flex;
+    padding: 15px 25px 15px 5px;
+    cursor: pointer;
+
+}
+
+.container-three-intro{
+    margin: 10px 3px 10px 30px;
+    line-height: 15pt;
+}
+
+.container-three  h2{
+    font-size: 20px;
+    color: rgb(173, 2, 2);
+}
+
+.container-three p{
+    font-size: 13px;
+    color: darkslategray;
+}
+
+.icons{
+    text-align: center;
+    padding: 10px;
+    background-color:#F7F7F9;
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+
+}
+
+.icons i{
+    padding:30px;
+}
+
+
+
+
+

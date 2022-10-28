@@ -1,0 +1,2592 @@
+/* css res#f9f0d1  http://meyer#f9f0d1com/eric/tools/css/rese#f9f0d1   v2.0 | 201#f9f0d16
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+/*SITE NAVIGATION CONTROLS*/
+
+nav {
+	z-index: 5;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+nav ul {
+	text-align: center;
+	list-style-type: none;
+	border-bottom: 1px solid darkred;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #fff;
+	/* the rest of your styling */
+}
+
+nav li {
+	float: left;
+	font-size: 2em;
+	font-family: 'Amatic SC', cursive;
+}
+
+li a {
+	display: block;
+	color: darkred;
+	text-align: center;
+	font-weight: 700;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	transition: 0.6s ease;
+	background-color: #660000;
+	text-shadow: 2px 0 0 #111, -2px 0 0 #111, 0 2px 0 #111, 0 -2px 0 #111, 1px 1px #111, -1px -1px 0 #111, 1px -1px 0 #111, -1px 1px 0 #111;
+	color: #fff;
+}
+
+.active {
+	background-color: #660000;
+}
+
+ul li a:hover:not(.active) {
+	background-color: #660000;
+}
+
+ul li a.active {
+	background-color: #333;
+}
+
+
+/*SITE NAVIGATION CONTROLS END*/
+
+body {
+	font-family: calibri, arial, helvetica, sans-serif;
+	color: black;
+	background-color: #d3d1d1;
+}
+
+#showcase img{
+	background-image: url(images/battle1.jpg);
+	background-position: center;
+	height: 80vh;
+	max-width: 100%;
+	background-size: cover;
+    margin: 2.5em auto auto auto;
+   
+}
+
+#showcase h1,
+h2 {
+	text-align: center;
+	font-family: 'Righteous', cursive;
+	font-size: 4em;
+}
+
+#showcase h1 {
+	padding-top: 2.5em;
+	color: #f9f0d1;
+	text-shadow: 2px 0 0 #660000, -2px 0 0 #660000, 0 2px 0 #660000, 0 -2px 0 #660000, 1px 1px #660000, -1px -1px 0 #660000, 1px -1px 0 #660000, -1px 1px 0 #660000;
+}
+
+
+/*DIFFERENT STYLING FOR THE WORD KENSHINs*/
+
+.showcase_word {
+	color: darkred;
+	text-shadow: 2px 0 0 #f9f0d1, -2px 0 0 #f9f0d1, 0 2px 0 #f9f0d1, 0 -2px 0 #f9f0d1, 1px 1px #f9f0d1, -1px -1px 0 #f9f0d1, 1px -1px 0 #f9f0d1, -1px 1px 0 #f9f0d1;
+}
+
+#showcase h2 {
+	text-align: center;
+	color: white;
+	font-size: 2.5em;
+	font-family: 'Amatic SC', cursive;
+	text-shadow: 2px 0 0 #660000, -2px 0 0 #660000, 0 2px 0 #660000, 0 -2px 0 #660000, 1px 1px #660000, -1px -1px 0 #660000, 1px -1px 0 #660000, -1px 1px 0 #660000;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	letter-spacing: 0.8pt;
+}
+
+#showcase h3 {
+	left: 0;
+	top: 70%;
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-size: 2.5em;
+	text-shadow: 2px 0 0 #660000, -2px 0 0 #660000, 0 2px 0 #660000, 0 -2px 0 #660000, 1px 1px #660000, -1px -1px 0 #660000, 1px -1px 0 #660000, -1px 1px 0 #660000;
+}
+
+p {
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+
+
+/*MAIN BODY CONTENT*/
+
+footer {
+	margin-top: 2em;
+	width: 95%;
+	background-color: #d3d1d1;
+	color: #000;
+	padding: 2em;
+}
+
+
+/*MEDIA QUERIES RESIZING NAVIGATION MENU, SHOWCASE IMAGE, AND GALLERY*/
+
+@media screen and (max-width: 1000px) {
+	ul li {
+		float: none;
+	}
+	#showcase {
+		height: 120vh;
+		margin-top: 12em;
+	}
+	#showcase h3 {
+		display: none;
+	}
+	div.gallery {
+		margin: 25px;
+	}
+}
+
+
+/*NEW CSS FOR NEW REDESIGN*/
+
+.container1 {
+	width: 100%;
+	color: #fff;
+	margin: 3.5em 0 2em 0;
+	background-color: #490101;
+	transform: skewY(8deg);
+}
+
+.inner-container1 {
+	max-width: 70%;
+	margin: 0 auto;
+	padding: 5em;
+	text-align: center;
+	transform: skewY(-8deg);
+}
+
+.container1 p {
+	padding: 1em;
+	font-size: 2.5em;
+	font-family: 'Amatic SC', cursive;
+	letter-spacing: 0.1cm;
+}
+
+blockquote {
+	text-align: center;
+	font-size: 2em;
+	font-style: italic;
+	color: #fff;
+	text-shadow: 2px 2px rgb(20, 1, 1);
+	letter-spacing: 0.025em;
+}
+
+
+/*CHARACTER SECTION*/
+
+.section_header {
+	font-family: 'Amatic SC', cursive;
+	text-align: center;
+	color: darkred;
+	padding: 0.5em;
+}
+
+.container3 .section_header {
+    transform: skewY(-5deg);
+    color: #d3d1d1;
+}
+
+.container2 {
+	max-width: 100%;
+	margin: 10px auto;
+	background: #000;
+	transform: skewY(-8deg);
+}
+
+.container2-inner {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-flow: wrap;
+	max-width: 55%;
+	margin: 0 auto;
+	padding: 4em 0;
+	transform: skewY(8deg);
+}
+
+
+/*add flexbox*/
+
+.box {
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	margin: 20px 20px;
+	transition: 1s;
+	overflow: hidden;
+	border: 2px solid #f9f0d1;
+}
+
+.box:hover {
+	transform: scale(1.03);
+	border: 2px solid #f9f0d1;
+	z-index: 2;
+	box-shadow: 2px 2px 2px #000;
+	cursor: pointer;
+}
+
+.container2 .text {
+	color: #fff;
+	background-color: #530202;
+	text-align: center;
+	padding: 1em;
+	margin-top: -5px;
+	font-size: 1.5em;
+	letter-spacing: 3pt;
+	text-transform: uppercase;
+	font-family: 'Amatic SC', cursive;
+}
+
+.container2 .button {
+	margin-bottom: 5em;
+}
+
+
+/*RESPONSIVE MEDIA QUERIES*/
+
+@media screen and (max-width:1200px) {
+	.box {
+		width: auto;
+		height: auto;
+	}
+}
+
+@media screen and (max-width:600px) {
+	.box {
+		width: auto;
+		height: auto;
+	}
+}
+
+@media screen and (max-width:1200px) {
+	.box {
+		border-radius: 0px;
+	}
+}
+
+@media screen and (max-width:770px) {
+	.box {
+		width: 200px;
+		height: auto;
+	}
+}
+
+@media screen and (max-width:770px) {
+	.box img {
+		width: 200px;
+		height: auto;
+	}
+}
+
+@media screen and (max-width:400px) {
+	.box img {
+		width: 150px;
+		height: auto;
+	}
+}
+
+.container3 {
+	margin: 0 auto;
+	height: 750px;
+	background-color: #490101;
+	position: relative;
+	transform: skewY(5deg);
+}
+
+.container3 iframe {
+	position: absolute;
+	top: 100px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 70%;
+	height: 70%;
+	border: 1px solid #f9f0d1;
+	margin: auto;
+	transform: skewY(-5deg);
+}
+
+.container4 {
+	margin: 0 auto;
+	padding: 2em;
+	background-color: #333;
+	background: url(images/battle1blurr.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	height: auto;
+}
+
+.container4 .section_header{
+    color: #d3d1d1;
+}
+
+.inner-container4 p {
+	text-align: center;
+	color: #fff;
+	padding: 20px;
+	font-size: 1.5em;
+}
+
+.inner-container4 h3 {
+	text-align: center;
+	color: #fff;
+	font-size: 2.5em;
+}
+
+
+/*BUTTON FOR BOOKINGS*/
+
+.button {
+	display: block;
+	border-radius: 4px;
+	background-color: #530202;
+	text-align: center;
+	border: none;
+	color: #FFFFFF;
+	font-size: 28px;
+	padding: 20px;
+	width: 250px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 30px auto;
+}
+
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.button:hover span {
+	padding-right: 25px;
+}
+
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+.button:hover {
+	background-color: #f4511e;
+}
+
+
+/*google map location*/
+
+.container5 {
+	margin: 0 auto;
+	background-color: #490101;
+	height: auto;
+	position: relative;
+	transform: skewY(-5deg);
+	z-index: -100;
+}
+
+.container5 .section_header {
+    transform: skewY(5deg);
+    color: #d3d1d1;
+}
+
+.container5 p {
+	transform: skewY(5deg);
+}
+
+.inner-container5 {
+	margin: 0 auto;
+	position: relative;
+	height: 0;
+	padding-bottom: 56.25%;
+	width: 100%;
+	transform: skewY(5deg);
+}
+
+.inner-container5 iframe {
+	position: absolute;
+	top: -100px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 70%;
+	height: 70%;
+	border: 1px solid #f9f0d1;
+	margin: 100px auto;
+}
+
+.container5 p {
+	text-align: center;
+	color: #fff;
+	font-size: 1.5em;
+}
+
+
+/*about*/
+
+.caption {
+	position: absolute;
+	left: 0;
+	top: 30%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+}
+
+.checked {
+	color: orange;
+}
+
+.star-ratings {
+	text-align: center;
+	padding: 40px;
+}
+
+.caption span.border {
+	background-color: #530202;
+	color: #fff;
+	padding: 18px;
+	font-size: 25px;
+	letter-spacing: 10px;
+}
+
+.section-1 {
+	background-color: #f9f0d1;
+}
+
+.section-2 {
+	background-color: #f9f0d1;
+}
+
+.inner-about-container h1 {
+	columns: white;
+	font-size: 3em;
+	font-family: 'Amatic SC', cursive;
+	text-align: left;
+}
+
+.inner-about-container h3 {
+	columns: white;
+	font-size: 3em;
+	font-family: 'Amatic SC', cursive;
+	text-align: left;
+	margin-top: 0.5em;
+}
+
+.parallax {
+	/* The image used */
+	background-image: url("images/kenshin-surrounded.jpg");
+	/* Set a specific height */
+	min-height: 500px;
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.about {
+	max-width: 100%;
+	padding: 2em;
+	background-color: #f9f0d1;
+	font-size: 1em;
+}
+
+.inner-about-container {
+	background-color: #f9f0d1;
+	width: 80%;
+	text-align: left;
+	margin: 10px auto;
+	padding: 50px;
+}
+
+.container-directorial {
+	max-width: 100%;
+	margin: 10px auto;
+	padding: 2em;
+	background-color: #490101;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-flow: wrap;
+}
+
+.box1 {
+	background: orange;
+	margin: 20px 20px;
+	transition: 1s;
+	overflow: hidden;
+}
+
+.box1:hover {
+	transform: scale(1.03);
+	z-index: 2;
+	cursor: pointer;
+}
+
+.box1 .text {
+	margin: 1em;
+	font-family: 'Amatic SC', cursive;
+	font-size: 20px;
+	font-weight: 900;
+}
+
+footer {
+	text-align: center;
+	width: auto;
+	height: auto;
+}
+
+
+/* css res#f9f0d1  http://meyer#f9f0d1com/eric/tools/css/rese#f9f0d1   v2.0 | 201#f9f0d16
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+/*SITE NAVIGATION CONTROLS*/
+
+nav {
+	z-index: 5;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+nav ul {
+	text-align: center;
+	list-style-type: none;
+	border-bottom: 1px solid darkred;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #fff;
+	/* the rest of your styling */
+}
+
+nav li {
+	float: left;
+	font-size: 2em;
+	font-family: 'Amatic SC', cursive;
+}
+
+li a {
+	display: block;
+	color: darkred;
+	text-align: center;
+	font-weight: 700;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	transition: 0.6s ease;
+	background-color: #660000;
+	text-shadow: 2px 0 0 #111, -2px 0 0 #111, 0 2px 0 #111, 0 -2px 0 #111, 1px 1px #111, -1px -1px 0 #111, 1px -1px 0 #111, -1px 1px 0 #111;
+	color: #fff;
+}
+
+.active {
+	background-color: #660000;
+}
+
+ul li a:hover:not(.active) {
+	background-color: #660000;
+}
+
+ul li a.active {
+	background-color: #333;
+}
+
+
+/*SITE NAVIGATION CONTROLS END*/
+
+body {
+	font-family: calibri, arial, helvetica, sans-serif;
+	color: black;
+	background-color: #d3d1d1;
+}
+
+#showcase {
+	background-image: url(images/battle1.jpg);
+	background-position: center;
+	height: 80vh;
+	max-width: 100%;
+	background-size: cover;
+	margin: 2.5em auto auto auto;
+}
+
+#showcase h1,
+h2 {
+	text-align: center;
+	font-family: 'Righteous', cursive;
+	font-size: 4em;
+}
+
+#showcase h1 {
+	padding-top: 2.5em;
+	color: #f9f0d1;
+	text-shadow: 2px 0 0 #660000, -2px 0 0 #660000, 0 2px 0 #660000, 0 -2px 0 #660000, 1px 1px #660000, -1px -1px 0 #660000, 1px -1px 0 #660000, -1px 1px 0 #660000;
+}
+
+
+/*DIFFERENT STYLING FOR THE WORD KENSHINs*/
+
+.showcase_word {
+	color: darkred;
+	text-shadow: 2px 0 0 #f9f0d1, -2px 0 0 #f9f0d1, 0 2px 0 #f9f0d1, 0 -2px 0 #f9f0d1, 1px 1px #f9f0d1, -1px -1px 0 #f9f0d1, 1px -1px 0 #f9f0d1, -1px 1px 0 #f9f0d1;
+}
+
+#showcase h2 {
+	text-align: center;
+	color: white;
+	font-size: 2.5em;
+	font-family: 'Amatic SC', cursive;
+	text-shadow: 2px 0 0 #660000, -2px 0 0 #660000, 0 2px 0 #660000, 0 -2px 0 #660000, 1px 1px #660000, -1px -1px 0 #660000, 1px -1px 0 #660000, -1px 1px 0 #660000;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	letter-spacing: 0.8pt;
+}
+
+#showcase h3 {
+	left: 0;
+	top: 70%;
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-size: 2.5em;
+	text-shadow: 2px 0 0 #660000, -2px 0 0 #660000, 0 2px 0 #660000, 0 -2px 0 #660000, 1px 1px #660000, -1px -1px 0 #660000, 1px -1px 0 #660000, -1px 1px 0 #660000;
+}
+
+p {
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+
+
+/*MAIN BODY CONTENT*/
+
+footer {
+	margin-top: 2em;
+	width: 95%;
+	background-color: #d3d1d1;
+	color: #000;
+	padding: 2em;
+}
+
+
+/*MEDIA QUERIES RESIZING NAVIGATION MENU, SHOWCASE IMAGE, AND GALLERY*/
+
+@media screen and (max-width: 1000px) {
+	ul li {
+		float: none;
+	}
+	#showcase {
+		height: 120vh;
+		margin-top: 12em;
+	}
+	#showcase h3 {
+		display: none;
+	}
+	div.gallery {
+		margin: 25px;
+	}
+}
+
+
+/*NEW CSS FOR NEW REDESIGN*/
+
+.container1 {
+	width: 100%;
+	color: #fff;
+	margin: 3.5em 0 2em 0;
+	background-color: #490101;
+	transform: skewY(8deg);
+	z-index: -100;
+}
+
+.inner-container1 {
+	max-width: 70%;
+	margin: 0 auto;
+	padding: 5em;
+	text-align: center;
+	transform: skewY(-8deg);
+}
+
+.container1 p {
+	padding: 1em;
+	font-size: 2.5em;
+	font-family: 'Amatic SC', cursive;
+	letter-spacing: 0.1cm;
+}
+
+blockquote {
+	text-align: center;
+	font-size: 2em;
+	font-style: italic;
+	color: #fff;
+	text-shadow: 2px 2px rgb(20, 1, 1);
+	letter-spacing: 0.025em;
+}
+
+
+/*CHARACTER SECTION*/
+
+.section_header {
+	font-family: 'Amatic SC', cursive;
+	text-align: center;
+	color: darkred;
+	padding: 0.5em;
+}
+
+.container3 .section_header {
+	transform: skewY(-5deg);
+}
+
+.container2 {
+	max-width: 100%;
+	margin: 10px auto;
+	background: #000;
+	transform: skewY(-8deg);
+}
+
+.container2 .section_header{
+    transform: skewY(8deg);
+    color: #d3d1d1;
+}
+
+.container2-inner {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-flow: wrap;
+	max-width: 55%;
+	margin: 0 auto;
+	padding: 4em 0;
+	transform: skewY(8deg);
+}
+
+
+/*add flexbox*/
+
+.box {
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	margin: 20px 20px;
+	transition: 1s;
+	overflow: hidden;
+	border: 2px solid #f9f0d1;
+}
+
+.box:hover {
+	transform: scale(1.03);
+	border: 2px solid #f9f0d1;
+	z-index: 2;
+	box-shadow: 2px 2px 2px #000;
+	cursor: pointer;
+}
+
+.container2 .text {
+	color: #fff;
+	background-color: #530202;
+	text-align: center;
+	padding: 1em;
+	margin-top: -5px;
+	font-size: 1.5em;
+	letter-spacing: 3pt;
+	text-transform: uppercase;
+	font-family: 'Amatic SC', cursive;
+}
+
+.container2 .button {
+	margin-bottom: 5em;
+}
+
+
+/*RESPONSIVE MEDIA QUERIES*/
+
+@media screen and (max-width:1200px) {
+	.box {
+		width: auto;
+		height: auto;
+	}
+}
+
+@media screen and (max-width:600px) {
+	.box {
+		width: auto;
+		height: auto;
+	}
+}
+
+@media screen and (max-width:1200px) {
+	.box {
+		border-radius: 0px;
+	}
+}
+
+@media screen and (max-width:770px) {
+	.box {
+		width: 200px;
+		height: auto;
+	}
+}
+
+@media screen and (max-width:770px) {
+	.box img {
+		width: 200px;
+		height: auto;
+	}
+}
+
+@media screen and (max-width:400px) {
+	.box img {
+		width: 150px;
+		height: auto;
+	}
+}
+
+.container3 {
+	margin: 0 auto;
+	height: 750px;
+	background-color: #490101;
+	position: relative;
+	transform: skewY(5deg);
+}
+
+.container3 iframe {
+	position: absolute;
+	top: 100px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 70%;
+	height: 70%;
+	border: 1px solid #f9f0d1;
+	margin: auto;
+	transform: skewY(-5deg);
+}
+
+.container4 {
+	margin: 0 auto;
+	padding: 2em;
+	background-color: #333;
+	background: url(images/battle1blurr.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	height: auto;
+}
+
+.inner-container4 p {
+	text-align: center;
+	color: #fff;
+	padding: 20px;
+	font-size: 1.5em;
+}
+
+.inner-container4 h3 {
+	text-align: center;
+	color: #fff;
+	font-size: 2.5em;
+}
+
+
+/*BUTTON FOR BOOKINGS*/
+
+.button {
+	display: block;
+	border-radius: 4px;
+	background-color: #530202;
+	text-align: center;
+	border: none;
+	color: #FFFFFF;
+	font-size: 28px;
+	padding: 20px;
+	width: 250px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 30px auto;
+}
+
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.button:hover span {
+	padding-right: 25px;
+}
+
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+.button:hover {
+	background-color: #f4511e;
+}
+
+
+/*google map location*/
+
+.container5 {
+	margin: 0 auto;
+	background-color: #490101;
+	height: auto;
+	position: relative;
+	transform: skewY(-5deg);
+	z-index: -100;
+}
+
+.container5 .section_header {
+	transform: skewY(5deg);
+}
+
+.container5 p {
+	transform: skewY(5deg);
+}
+
+.inner-container5 {
+	margin: 0 auto;
+	position: relative;
+	height: 0;
+	padding-bottom: 56.25%;
+	width: 100%;
+	transform: skewY(5deg);
+}
+
+.inner-container5 iframe {
+	position: absolute;
+	top: -100px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 70%;
+	height: 70%;
+	border: 1px solid #f9f0d1;
+	margin: 100px auto;
+}
+
+.container5 p {
+	text-align: center;
+	color: #fff;
+	font-size: 1.5em;
+}
+
+
+/*about*/
+
+.caption {
+	position: absolute;
+	left: 0;
+	top: 30%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+}
+
+.checked {
+	color: orange;
+}
+
+.star-ratings {
+	text-align: center;
+	padding: 40px;
+}
+
+.caption span.border {
+	background-color: #530202;
+	color: #fff;
+	padding: 18px;
+	font-size: 25px;
+	letter-spacing: 10px;
+}
+
+.section-1 {
+	background-color: #f9f0d1;
+}
+
+.section-2 {
+	background-color: #f9f0d1;
+}
+
+.inner-about-container h1 {
+	columns: white;
+	font-size: 3em;
+	font-family: 'Amatic SC', cursive;
+	text-align: left;
+}
+
+.inner-about-container h3 {
+	columns: white;
+	font-size: 3em;
+	font-family: 'Amatic SC', cursive;
+	text-align: left;
+	margin-top: 0.5em;
+}
+
+.parallax {
+	/* The image used */
+	background-image: url("images/kenshin-surrounded.jpg");
+	/* Set a specific height */
+	min-height: 500px;
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.about {
+	max-width: 100%;
+	padding: 2em;
+	background-color: #f9f0d1;
+	font-size: 1em;
+}
+
+.inner-about-container {
+	background-color: #f9f0d1;
+	width: 80%;
+	text-align: left;
+	margin: 10px auto;
+	padding: 50px;
+}
+
+.container-directorial {
+	max-width: 100%;
+	margin: 10px auto;
+	padding: 2em;
+	background-color: #490101;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-flow: wrap;
+}
+
+.box1 {
+	background: orange;
+	margin: 20px 20px;
+	transition: 1s;
+	overflow: hidden;
+}
+
+.box1:hover {
+	transform: scale(1.03);
+	z-index: 2;
+	cursor: pointer;
+}
+
+.box1 .text {
+	margin: 1em;
+	font-family: 'Amatic SC', cursive;
+	font-size: 20px;
+	font-weight: 900;
+}
+
+footer {
+	text-align: center;
+	width: auto;
+	height: auto;
+}
+
+
+/* css res#f9f0d1  http://meyer#f9f0d1com/eric/tools/css/rese#f9f0d1   v2.0 | 201#f9f0d16
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+/*SITE NAVIGATION CONTROLS*/
+
+nav {
+	z-index: 5;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+nav ul {
+	text-align: center;
+	list-style-type: none;
+	border-bottom: 1px solid darkred;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #fff;
+	/* the rest of your styling */
+}
+
+nav li {
+	float: left;
+	font-size: 2em;
+	font-family: 'Amatic SC', cursive;
+}
+
+li a {
+	display: block;
+	color: darkred;
+	text-align: center;
+	font-weight: 700;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	transition: 0.6s ease;
+	background-color: #660000;
+	text-shadow: 2px 0 0 #111, -2px 0 0 #111, 0 2px 0 #111, 0 -2px 0 #111, 1px 1px #111, -1px -1px 0 #111, 1px -1px 0 #111, -1px 1px 0 #111;
+	color: #fff;
+}
+
+.active {
+	background-color: #660000;
+}
+
+ul li a:hover:not(.active) {
+	background-color: #660000;
+}
+
+ul li a.active {
+	background-color: #333;
+}
+
+
+/*SITE NAVIGATION CONTROLS END*/
+
+body {
+	font-family: calibri, arial, helvetica, sans-serif;
+	color: black;
+	background-color: #d3d1d1;
+}
+
+#showcase {
+	background-image: url(images/battle1.jpg);
+	background-position: center;
+	height: 80vh;
+	max-width: 100%;
+	background-size: cover;
+	margin: 2.5em auto auto auto;
+}
+
+#showcase h1,
+h2 {
+	text-align: center;
+	font-family: 'Righteous', cursive;
+	font-size: 4em;
+}
+
+#showcase h1 {
+	padding-top: 2.5em;
+	color: #f9f0d1;
+	text-shadow: 2px 0 0 #660000, -2px 0 0 #660000, 0 2px 0 #660000, 0 -2px 0 #660000, 1px 1px #660000, -1px -1px 0 #660000, 1px -1px 0 #660000, -1px 1px 0 #660000;
+}
+
+
+/*DIFFERENT STYLING FOR THE WORD KENSHINs*/
+
+.showcase_word {
+	color: darkred;
+	text-shadow: 2px 0 0 #f9f0d1, -2px 0 0 #f9f0d1, 0 2px 0 #f9f0d1, 0 -2px 0 #f9f0d1, 1px 1px #f9f0d1, -1px -1px 0 #f9f0d1, 1px -1px 0 #f9f0d1, -1px 1px 0 #f9f0d1;
+}
+
+#showcase h2 {
+	text-align: center;
+	color: white;
+	font-size: 2.5em;
+	font-family: 'Amatic SC', cursive;
+	text-shadow: 2px 0 0 #660000, -2px 0 0 #660000, 0 2px 0 #660000, 0 -2px 0 #660000, 1px 1px #660000, -1px -1px 0 #660000, 1px -1px 0 #660000, -1px 1px 0 #660000;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	letter-spacing: 0.8pt;
+}
+
+#showcase h3 {
+	left: 0;
+	top: 70%;
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-size: 2.5em;
+	text-shadow: 2px 0 0 #660000, -2px 0 0 #660000, 0 2px 0 #660000, 0 -2px 0 #660000, 1px 1px #660000, -1px -1px 0 #660000, 1px -1px 0 #660000, -1px 1px 0 #660000;
+}
+
+p {
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+
+
+/*MAIN BODY CONTENT*/
+
+footer {
+	margin-top: 2em;
+	width: 95%;
+	background-color: #d3d1d1;
+	color: #000;
+	padding: 2em;
+}
+
+
+/*MEDIA QUERIES RESIZING NAVIGATION MENU, SHOWCASE IMAGE, AND GALLERY*/
+
+@media screen and (max-width: 1000px) {
+	ul li {
+		float: none;
+	}
+	#showcase {
+		height: 120vh;
+		margin-top: 12em;
+	}
+	#showcase h3 {
+		display: none;
+	}
+	div.gallery {
+		margin: 25px;
+	}
+}
+
+
+/*NEW CSS FOR NEW REDESIGN*/
+
+.container1 {
+	width: 100%;
+	color: #fff;
+	margin: 3.5em 0 2em 0;
+	background-color: #490101;
+	transform: skewY(8deg);
+	z-index: -100;
+}
+
+.inner-container1 {
+	max-width: 70%;
+	margin: 0 auto;
+	padding: 5em;
+	text-align: center;
+    transform: skewY(-8deg);
+}
+
+.container1 p {
+	padding: 1em;
+	font-size: 2.5em;
+	font-family: 'Amatic SC', cursive;
+	letter-spacing: 0.1cm;
+}
+
+blockquote {
+	text-align: center;
+	font-size: 2em;
+	font-style: italic;
+	color: #fff;
+	text-shadow: 2px 2px rgb(20, 1, 1);
+	letter-spacing: 0.025em;
+}
+
+
+/*CHARACTER SECTION*/
+
+.section_header {
+	font-family: 'Amatic SC', cursive;
+	text-align: center;
+	color: darkred;
+	padding: 0.5em;
+}
+
+.container3 .section_header {
+	transform: skewY(-5deg);
+}
+
+.container2 {
+	max-width: 100%;
+	margin: 10px auto;
+	background: #000;
+	transform: skewY(-8deg);
+}
+
+.container2-inner {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-flow: wrap;
+	max-width: 55%;
+	margin: 0 auto;
+	padding: 4em 0;
+	transform: skewY(8deg);
+}
+
+
+/*add flexbox*/
+
+.box {
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	margin: 20px 20px;
+	transition: 1s;
+	overflow: hidden;
+	border: 2px solid #f9f0d1;
+}
+
+.box:hover {
+	transform: scale(1.03);
+	border: 2px solid #f9f0d1;
+	z-index: 2;
+	box-shadow: 2px 2px 2px #000;
+	cursor: pointer;
+}
+
+.container2 .text {
+	color: #fff;
+	background-color: #530202;
+	text-align: center;
+	padding: 1em;
+	margin-top: -5px;
+	font-size: 1.5em;
+	letter-spacing: 3pt;
+	text-transform: uppercase;
+	font-family: 'Amatic SC', cursive;
+}
+
+.container2 .button {
+	margin-bottom: 5em;
+}
+
+
+/*RESPONSIVE MEDIA QUERIES*/
+
+@media screen and (max-width:1200px) {
+	.box {
+		width: auto;
+		height: auto;
+	}
+}
+
+@media screen and (max-width:600px) {
+	.box {
+		width: auto;
+		height: auto;
+	}
+}
+
+@media screen and (max-width:1200px) {
+	.box {
+		border-radius: 0px;
+	}
+}
+
+@media screen and (max-width:770px) {
+	.box {
+		width: 200px;
+		height: auto;
+	}
+}
+
+@media screen and (max-width:770px) {
+	.box img {
+		width: 200px;
+		height: auto;
+	}
+}
+
+@media screen and (max-width:400px) {
+	.box img {
+		width: 150px;
+		height: auto;
+	}
+}
+
+.container3 {
+	margin: 0 auto;
+	height: 750px;
+	background-color: #490101;
+	position: relative;
+	transform: skewY(5deg);
+}
+
+.container3 iframe {
+	position: absolute;
+	top: 100px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 70%;
+	height: 70%;
+	border: 1px solid #f9f0d1;
+	margin: auto;
+	transform: skewY(-5deg);
+}
+
+.container4 {
+	margin: 0 auto;
+	padding: 2em;
+	background-color: #333;
+	background: url(images/battle1blurr.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	height: auto;
+}
+
+.inner-container4 p {
+	text-align: center;
+	color: #fff;
+	padding: 20px;
+	font-size: 1.5em;
+}
+
+.inner-container4 h3 {
+	text-align: center;
+	color: #fff;
+	font-size: 2.5em;
+}
+
+
+/*BUTTON FOR BOOKINGS*/
+
+.button {
+	display: block;
+	border-radius: 4px;
+	background-color: #530202;
+	text-align: center;
+	border: none;
+	color: #FFFFFF;
+	font-size: 28px;
+	padding: 20px;
+	width: 250px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 30px auto;
+}
+
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.button:hover span {
+	padding-right: 25px;
+}
+
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+.button:hover {
+	background-color: #f4511e;
+}
+
+
+/*google map location*/
+
+.container5 {
+	margin: 0 auto;
+	background-color: #490101;
+	height: auto;
+	position: relative;
+	transform: skewY(-5deg);
+	z-index: -100;
+}
+
+.container5 .section_header {
+	transform: skewY(5deg);
+}
+
+.container5 p {
+	transform: skewY(5deg);
+}
+
+.inner-container5 {
+	margin: 0 auto;
+	position: relative;
+	height: 0;
+	padding-bottom: 56.25%;
+	width: 100%;
+	transform: skewY(5deg);
+}
+
+.inner-container5 iframe {
+	position: absolute;
+	top: -100px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 70%;
+	height: 70%;
+	border: 1px solid #f9f0d1;
+	margin: 100px auto;
+}
+
+.container5 p {
+	text-align: center;
+	color: #fff;
+	font-size: 1.5em;
+}
+
+
+/*about*/
+
+.caption {
+	position: absolute;
+	left: 0;
+	top: 30%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+}
+
+.checked {
+	color: orange;
+}
+
+.star-ratings {
+	text-align: center;
+	padding: 40px;
+}
+
+.caption span.border {
+	background-color: #530202;
+	color: #fff;
+	padding: 18px;
+	font-size: 25px;
+	letter-spacing: 10px;
+}
+
+.section-1 {
+	background-color: #f9f0d1;
+}
+
+.section-2 {
+	background-color: #f9f0d1;
+}
+
+.inner-about-container h1 {
+	columns: white;
+	font-size: 3em;
+	font-family: 'Amatic SC', cursive;
+	text-align: left;
+}
+
+.inner-about-container h3 {
+	columns: white;
+	font-size: 3em;
+	font-family: 'Amatic SC', cursive;
+	text-align: left;
+	margin-top: 0.5em;
+}
+
+.parallax {
+	/* The image used */
+	background-image: url("images/kenshin-surrounded.jpg");
+	/* Set a specific height */
+	min-height: 500px;
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.about {
+	max-width: 100%;
+	padding: 2em;
+	background-color: #f9f0d1;
+	font-size: 1em;
+}
+
+.inner-about-container {
+	background-color: #f9f0d1;
+	width: 80%;
+	text-align: left;
+	margin: 10px auto;
+	padding: 50px;
+}
+
+.container-directorial {
+	max-width: 100%;
+	margin: 10px auto;
+	padding: 2em;
+	background-color: #490101;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-flow: wrap;
+}
+
+.box1 {
+	background: orange;
+	margin: 20px 20px;
+	transition: 1s;
+	overflow: hidden;
+}
+
+.box1:hover {
+	transform: scale(1.03);
+	z-index: 2;
+	cursor: pointer;
+}
+
+.box1 .text {
+	margin: 1em;
+	font-family: 'Amatic SC', cursive;
+	font-size: 20px;
+	font-weight: 900;
+}
+
+footer {
+	text-align: center;
+	width: auto;
+	height: auto;
+}
+
+
+/* css res#f9f0d1  http://meyer#f9f0d1com/eric/tools/css/rese#f9f0d1   v2.0 | 201#f9f0d16
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+/*SITE NAVIGATION CONTROLS*/
+
+nav {
+	z-index: 5;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+nav ul {
+	text-align: center;
+	list-style-type: none;
+	border-bottom: 1px solid darkred;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #fff;
+	/* the rest of your styling */
+}
+
+nav li {
+	float: left;
+	font-size: 2em;
+	font-family: 'Amatic SC', cursive;
+}
+
+li a {
+	display: block;
+	color: darkred;
+	text-align: center;
+	font-weight: 700;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	transition: 0.6s ease;
+	background-color: #660000;
+	text-shadow: 2px 0 0 #111, -2px 0 0 #111, 0 2px 0 #111, 0 -2px 0 #111, 1px 1px #111, -1px -1px 0 #111, 1px -1px 0 #111, -1px 1px 0 #111;
+	color: #fff;
+}
+
+.active {
+	background-color: #660000;
+}
+
+ul li a:hover:not(.active) {
+	background-color: #660000;
+}
+
+ul li a.active {
+	background-color: #333;
+}
+
+
+/*SITE NAVIGATION CONTROLS END*/
+
+body {
+	font-family: calibri, arial, helvetica, sans-serif;
+	color: black;
+	background-color: #d3d1d1;
+}
+
+#showcase {
+	background-image: url(images/battle1.jpg);
+	background-position: center;
+	height: 80vh;
+	max-width: 100%;
+	background-size: cover;
+	margin: 2.5em auto auto auto;
+}
+
+#showcase h1,
+h2 {
+	text-align: center;
+	font-family: 'Righteous', cursive;
+	font-size: 4em;
+}
+
+#showcase h1 {
+	padding-top: 2.5em;
+	color: #f9f0d1;
+	text-shadow: 2px 0 0 #660000, -2px 0 0 #660000, 0 2px 0 #660000, 0 -2px 0 #660000, 1px 1px #660000, -1px -1px 0 #660000, 1px -1px 0 #660000, -1px 1px 0 #660000;
+}
+
+
+/*DIFFERENT STYLING FOR THE WORD KENSHINs*/
+
+.showcase_word {
+	color: darkred;
+	text-shadow: 2px 0 0 #f9f0d1, -2px 0 0 #f9f0d1, 0 2px 0 #f9f0d1, 0 -2px 0 #f9f0d1, 1px 1px #f9f0d1, -1px -1px 0 #f9f0d1, 1px -1px 0 #f9f0d1, -1px 1px 0 #f9f0d1;
+}
+
+#showcase h2 {
+	text-align: center;
+	color: white;
+	font-size: 2.5em;
+	font-family: 'Amatic SC', cursive;
+	text-shadow: 2px 0 0 #660000, -2px 0 0 #660000, 0 2px 0 #660000, 0 -2px 0 #660000, 1px 1px #660000, -1px -1px 0 #660000, 1px -1px 0 #660000, -1px 1px 0 #660000;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	letter-spacing: 0.8pt;
+}
+
+#showcase h3 {
+	left: 0;
+	top: 70%;
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-size: 2.5em;
+	text-shadow: 2px 0 0 #660000, -2px 0 0 #660000, 0 2px 0 #660000, 0 -2px 0 #660000, 1px 1px #660000, -1px -1px 0 #660000, 1px -1px 0 #660000, -1px 1px 0 #660000;
+}
+
+p {
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+
+
+/*MAIN BODY CONTENT*/
+
+footer {
+	margin-top: 2em;
+	width: 95%;
+	background-color: #d3d1d1;
+	color: #000;
+	padding: 2em;
+}
+
+
+/*MEDIA QUERIES RESIZING NAVIGATION MENU, SHOWCASE IMAGE, AND GALLERY*/
+
+@media screen and (max-width: 1000px) {
+	ul li {
+		float: none;
+	}
+	#showcase {
+		height: 120vh;
+		margin-top: 12em;
+	}
+	#showcase h3 {
+		display: none;
+	}
+	div.gallery {
+		margin: 25px;
+	}
+}
+
+
+/*NEW CSS FOR NEW REDESIGN*/
+
+.container1 {
+	width: 100%;
+	color: #fff;
+	margin: 3.5em 0 2em 0;
+	background-color: #490101;
+	transform: skewY(8deg);
+	
+}
+
+.inner-container1 {
+	max-width: 70%;
+	margin: 0 auto;
+	padding: 5em;
+	text-align: center;
+	transform: skewY(-8deg);
+}
+
+.container1 p {
+	padding: 1em;
+	font-size: 2.5em;
+	font-family: 'Amatic SC', cursive;
+	letter-spacing: 0.1cm;
+}
+
+blockquote {
+	text-align: center;
+	font-size: 2em;
+	font-style: italic;
+	color: #fff;
+	text-shadow: 2px 2px rgb(20, 1, 1);
+	letter-spacing: 0.025em;
+}
+
+
+/*CHARACTER SECTION*/
+
+.section_header {
+	font-family: 'Amatic SC', cursive;
+	text-align: center;
+	color: darkred;
+	padding: 0.5em;
+}
+
+.container3 .section_header {
+	transform: skewY(-5deg);
+}
+
+.container2 {
+	max-width: 100%;
+	margin: 10px auto;
+	background: #000;
+	transform: skewY(-8deg);
+}
+
+.container2-inner {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-flow: wrap;
+    max-width: 55%;
+	margin: 0 auto;
+	padding: 4em 0;
+	transform: skewY(8deg);
+}
+
+
+/*add flexbox*/
+
+.box {
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	margin: 20px 20px;
+	transition: 1s;
+	overflow: hidden;
+	
+}
+
+.box:hover {
+	transform: scale(1.03);
+	z-index: 2;
+	box-shadow: 2px 2px 2px #000;
+	cursor: pointer;
+}
+
+.container2 .text {
+	color: #fff;
+	background-color: #530202;
+	text-align: center;
+	padding: 1em;
+	margin-top: -5px;
+	font-size: 1.5em;
+	letter-spacing: 3pt;
+	text-transform: uppercase;
+	font-family: 'Amatic SC', cursive;
+}
+
+.container2 .button {
+	margin-bottom: 5em;
+}
+
+
+/*RESPONSIVE MEDIA QUERIES*/
+
+@media screen and (max-width:1200px) {
+	.box {
+		width: auto;
+		height: auto;
+	}
+}
+
+@media screen and (max-width:600px) {
+	.box {
+		width: auto;
+		height: auto;
+	}
+}
+
+@media screen and (max-width:1200px) {
+	.box {
+		border-radius: 0px;
+	}
+}
+
+@media screen and (max-width:770px) {
+	.box {
+		width: 200px;
+		height: auto;
+	}
+}
+
+@media screen and (max-width:770px) {
+	.box img {
+		width: 200px;
+		height: auto;
+	}
+}
+
+@media screen and (max-width:400px) {
+	.box img {
+		width: 150px;
+		height: auto;
+	}
+}
+
+.container3 {
+	margin: 0 auto;
+	height: 750px;
+	background-color: #490101;
+	position: relative;
+	transform: skewY(5deg);
+}
+
+.container3 iframe {
+	position: absolute;
+	top: 100px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 70%;
+	height: 70%;
+	border: 1px solid #f9f0d1;
+	margin: auto;
+	transform: skewY(-5deg);
+}
+
+.container4 {
+	margin: 0 auto;
+	padding: 2em;
+	background-color: #333;
+	background: url(images/battle1blurr.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	height: auto;
+}
+
+.inner-container4 p {
+	text-align: center;
+	color: #fff;
+	padding: 20px;
+	font-size: 1.5em;
+}
+
+.inner-container4 h3 {
+	text-align: center;
+	color: #fff;
+	font-size: 2.5em;
+}
+
+
+/*BUTTON FOR BOOKINGS*/
+
+.button {
+	display: block;
+	border-radius: 4px;
+	background-color: #530202;
+	text-align: center;
+	border: none;
+	color: #FFFFFF;
+	font-size: 28px;
+	padding: 20px;
+	width: 250px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 30px auto;
+}
+
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.button:hover span {
+	padding-right: 25px;
+}
+
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+.button:hover {
+	background-color: #f4511e;
+}
+
+
+/*google map location*/
+
+.container5 {
+	margin: 0 auto;
+	background-color: #490101;
+	height: auto;
+	position: relative;
+	transform: skewY(-5deg);
+	z-index: -100;
+}
+
+.container5 .section_header {
+	transform: skewY(5deg);
+}
+
+.container5 p {
+	transform: skewY(5deg);
+}
+
+.inner-container5 {
+	margin: 0 auto;
+	position: relative;
+	height: 0;
+	padding-bottom: 56.25%;
+	width: 100%;
+	transform: skewY(5deg);
+}
+
+.inner-container5 iframe {
+	position: absolute;
+	top: -100px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 70%;
+	height: 70%;
+	border: 1px solid #f9f0d1;
+	margin: 100px auto;
+}
+
+.container5 p {
+	text-align: center;
+	color: #fff;
+	font-size: 1.5em;
+}
+
+
+/*about*/
+
+.caption {
+	position: absolute;
+	left: 0;
+	top: 30%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+}
+
+.checked {
+	color: orange;
+}
+
+.star-ratings {
+	text-align: center;
+	padding: 40px;
+}
+
+.caption span.border {
+	background-color: #530202;
+	color: #fff;
+	padding: 18px;
+	font-size: 25px;
+	letter-spacing: 10px;
+}
+
+.section-1 {
+	background-color: #f9f0d1;
+}
+
+.section-2 {
+	background-color: #f9f0d1;
+}
+
+.inner-about-container h1 {
+	columns: white;
+	font-size: 3em;
+	font-family: 'Amatic SC', cursive;
+	text-align: left;
+}
+
+.inner-about-container h3 {
+	columns: white;
+	font-size: 3em;
+	font-family: 'Amatic SC', cursive;
+	text-align: left;
+	margin-top: 0.5em;
+}
+
+.parallax {
+	/* The image used */
+	background-image: url("images/kenshin-surrounded.jpg");
+	/* Set a specific height */
+	min-height: 500px;
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.about {
+	max-width: 100%;
+	padding: 2em;
+	background-color: #f9f0d1;
+	font-size: 1em;
+}
+
+.inner-about-container {
+	background-color: #f9f0d1;
+	width: 80%;
+	text-align: left;
+	margin: 10px auto;
+	padding: 50px;
+}
+
+.container-directorial {
+	max-width: 100%;
+	margin: 10px auto;
+	padding: 2em;
+	background-color: #490101;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-flow: wrap;
+}
+
+.box1 {
+	background: orange;
+	margin: 20px 20px;
+	transition: 1s;
+	overflow: hidden;
+}
+
+.box1:hover {
+	transform: scale(1.03);
+	z-index: 2;
+	cursor: pointer;
+}
+
+.box1 .text {
+	margin: 1em;
+	font-family: 'Amatic SC', cursive;
+	font-size: 20px;
+	font-weight: 900;
+}
+
+footer {
+	text-align: center;
+	width: auto;
+	height: auto;
+}

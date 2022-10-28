@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/contents.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <div class="card">
+     <a href="index.php"> <img src="assets/img/moi.png"></a>
+   </div>
+
+    <div class="module-header-container">
+      <span class="lines"></span>
+      <h1>Course Modules and Content</h1>
+      <h2>Design for web</h2>
+    
+  </div>
+    <section class="section">
+    <div class="accordion">
+      <div class="accordion-item">
+        <div class="item-header">
+          <h1 class="title">PHP and MySQL Project</h1>
+          <div class="fa fa-gear fa-spin"></div>
+        </div>
+        <p class="text">Add and delete data: <a href="php-project/index.php">Php and MySQL Pizza Site.</a></p>
+          
+      </div>
+
+      <div class="accordion-item">
+        <div class="item-header">
+          <h1 class="title">Version Control</h1>
+          <div class="fa fa-gear fa-spin"></div>
+        </div>
+        <p class="text">Version Control Presentation: <a href="assets/papers/PresentationGIT-converted.pdf">GIT and Version Control.</a></p>
+
+      </div>
+    </section>
+
+
+
+    <script type="text/javascript">
+      $(".item-header").click(function(){
+        $(".accordion-item").removeClass("active");
+        $(this).parent().addClass("active");
+        $(".icon").text("+");
+        $(this).children(".icon").text("-");
+      });
+    </script>
+  </body>
+</html>
